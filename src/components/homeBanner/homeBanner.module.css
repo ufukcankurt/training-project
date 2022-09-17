@@ -1,0 +1,34 @@
+.container {
+  /* width: 100vw; */
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 17rem;
+  padding-bottom: 12.5rem;
+  color: #fff;
+  background-image: url("../../../public/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 4rem;
+}
+
+.subHead {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
