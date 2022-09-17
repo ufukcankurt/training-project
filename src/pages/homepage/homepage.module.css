@@ -1,0 +1,10 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100;
+}
+
+.firstSection{
+    width: 100%;
+}
