@@ -4,6 +4,7 @@ import HomeBanner from "../../components/homeBanner/HomeBanner";
 import HomeNav from "../../components/homeNav/HomeNav";
 
 import WhoWeAre from "../../components/whoWeAre/WhoWeAre";
+import PopularClasses from "../../components/popularClasses/PopularClasses";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,9 @@ const Homepage = () => {
       <HomeBanner />
       <section className={`${styles.firstSection} section`}>
         <WhoWeAre />
+      </section>
+      <section className={`${styles.secondSection} section`}>
+        <PopularClasses/>
       </section>
     </div>
   );
