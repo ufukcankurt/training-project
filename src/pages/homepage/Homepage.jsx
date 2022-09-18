@@ -9,6 +9,7 @@ import OurTrainer from "../../components/ourTrainer/OurTrainer";
 import OurPricing from "../../components/ourPricing/OurPricing";
 import Statistic from "../../components/statistic/Statistic";
 import Contact from "../../components/contact/Contact";
+import Footer from "../../components/footer/Footer";
 
 const Homepage = () => {
   return (
@@ -33,6 +34,9 @@ const Homepage = () => {
       <section className={`${styles.sixthSection} section`}>
         <Contact />
       </section>
+      <footer className={`${styles.footer} section`}>
+        <Footer />
+      </footer>
     </div>
   );
 };
