@@ -16,7 +16,15 @@
   margin: 0 !important;
 }
 
-.footer{
+.footer {
   background-color: #222;
   color: #fff;
+  padding-bottom: 15px !important;
+  border-bottom: 1px solid #ea4c23;
+}
+
+.footerBottom {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0 30px 0;
 }

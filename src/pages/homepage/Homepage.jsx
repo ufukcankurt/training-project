@@ -10,6 +10,7 @@ import OurPricing from "../../components/ourPricing/OurPricing";
 import Statistic from "../../components/statistic/Statistic";
 import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
+import FooterBottom from "../../components/footerBottom/FooterBottom";
 
 const Homepage = () => {
   return (
@@ -37,6 +38,9 @@ const Homepage = () => {
       <footer className={`${styles.footer} section`}>
         <Footer />
       </footer>
+      <section className={`${styles.footerBottom} d-center`}>
+        <FooterBottom />
+      </section>
     </div>
   );
 };
