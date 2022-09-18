@@ -1,6 +1,5 @@
 import styles from "./homeNav.module.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const HomeNav = () => {
   const [sticky, setSticky] = useState(false);
@@ -26,24 +25,34 @@ const HomeNav = () => {
         <div className={styles.links}>
           <ul className={styles.ul}>
             <li className={styles.li}>
-              <Link to="/">
+              <a href="#home">
                 <span className={styles.link}>Home</span>
-              </Link>
+              </a>
             </li>
             <li className={styles.li}>
-              <Link to="/">
-                <span className={styles.link}>Home</span>
-              </Link>
+              <a href="#about">
+                <span className={styles.link}>About</span>
+              </a>
             </li>
             <li className={styles.li}>
-              <Link to="/">
-                <span className={styles.link}>Home</span>
-              </Link>
+              <a href="#classes">
+                <span className={styles.link}>Classes</span>
+              </a>
             </li>
             <li className={styles.li}>
-              <Link to="/">
-                <span className={styles.link}>Home</span>
-              </Link>
+              <a href="#trainers">
+                <span className={styles.link}>Trainers</span>
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a href="#pricing">
+                <span className={styles.link}>Pricing</span>
+              </a>
+            </li>
+            <li className={styles.li}>
+              <a href="#contact">
+                <span className={styles.link}>Contact</span>
+              </a>
             </li>
           </ul>
         </div>
