@@ -1,0 +1,53 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-left-width: 1px !important;
+  border-left-color: #fdede9 !important;
+  border-left-style: solid !important;
+}
+
+.item {
+  width: 25%;
+  padding: 60px 15px;
+  text-align: center;
+  border-right-width: 1px !important;
+  border-right-color: #fdede9 !important;
+  border-right-style: solid !important;
+}
+
+.itemContent {
+  font-size: 36px;
+  color: #ea4c23;
+  font-weight: 800;
+}
+
+.count {
+  background: url(../../../public/img/bg-counter.png) no-repeat center center
+    #fff;
+  width: 100px;
+  height: 100px;
+  line-height: 115px;
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.title {
+  font-weight: 400;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.1;
+}
