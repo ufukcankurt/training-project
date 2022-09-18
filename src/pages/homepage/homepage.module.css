@@ -12,3 +12,8 @@
 .fourthSection {
   background-color: #f7f7f7;
 }
+
+.fifthSection{
+  padding: 0 !important;
+  margin: 0 !important;
+}
