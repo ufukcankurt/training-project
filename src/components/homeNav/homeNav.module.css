@@ -46,13 +46,23 @@
 }
 
 .li {
+  cursor: pointer;
   margin: 0 10px;
+}
+
+.li:hover .li a {
+  background-color: aqua;
+}
+
+.active {
+  border-bottom: 2px solid #ea4c23;
 }
 
 .li a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  padding: 10px;
 }
 
 .link {

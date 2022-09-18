@@ -1,5 +1,6 @@
 import styles from "./homeNav.module.css";
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const HomeNav = () => {
   const [sticky, setSticky] = useState(false);
@@ -25,34 +26,76 @@ const HomeNav = () => {
         <div className={styles.links}>
           <ul className={styles.ul}>
             <li className={styles.li}>
-              <a href="#home">
+              <Link
+                to="home"
+                activeClass={styles.active}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
                 <span className={styles.link}>Home</span>
-              </a>
+              </Link>
             </li>
             <li className={styles.li}>
-              <a href="#about">
+              <Link
+                to="about"
+                activeClass={styles.active}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
                 <span className={styles.link}>About</span>
-              </a>
+              </Link>
             </li>
             <li className={styles.li}>
-              <a href="#classes">
+              <Link
+                to="classes"
+                activeClass={styles.active}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
                 <span className={styles.link}>Classes</span>
-              </a>
+              </Link>
             </li>
             <li className={styles.li}>
-              <a href="#trainers">
+              <Link
+                to="trainers"
+                activeClass={styles.active}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
                 <span className={styles.link}>Trainers</span>
-              </a>
+              </Link>
             </li>
             <li className={styles.li}>
-              <a href="#pricing">
+              <Link
+                to="pricing"
+                activeClass={styles.active}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
                 <span className={styles.link}>Pricing</span>
-              </a>
+              </Link>
             </li>
             <li className={styles.li}>
-              <a href="#contact">
+              <Link
+                to="contact"
+                activeClass={styles.active}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
                 <span className={styles.link}>Contact</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
