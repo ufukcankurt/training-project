@@ -85,7 +85,7 @@ const Contact = () => {
         <div className={styles.infoSide}>
           <p className={styles.title}>Contact Information</p>
           <div className={styles.infos}>
-            <p className={styles.info}>492 Caledonian Road N7 9RP</p>
+            <p className={styles.info}>NEW YORK, NY 10024-7603, USA</p>
             <a href="w." className={styles.info}>0752458457</a>
             <a href="w." className={styles.info}>info@example.com</a>
             <a href="w." className={styles.info}>www.example.com</a>
