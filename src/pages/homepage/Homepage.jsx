@@ -8,6 +8,7 @@ import PopularClasses from "../../components/popularClasses/PopularClasses";
 import OurTrainer from "../../components/ourTrainer/OurTrainer";
 import OurPricing from "../../components/ourPricing/OurPricing";
 import Statistic from "../../components/statistic/Statistic";
+import Contact from "../../components/contact/Contact";
 
 const Homepage = () => {
   return (
@@ -28,6 +29,9 @@ const Homepage = () => {
       </section>
       <section>
         <Statistic className={`${styles.fifthSection} section`} />
+      </section>
+      <section className={`${styles.sixthSection} section`}>
+        <Contact />
       </section>
     </div>
   );

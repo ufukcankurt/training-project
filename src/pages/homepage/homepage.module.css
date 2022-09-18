@@ -5,15 +5,13 @@
   width: 100;
 }
 
-.secondSection {
+.secondSection,
+.fourthSection,
+.sixthSection {
   background-color: #f7f7f7;
 }
 
-.fourthSection {
-  background-color: #f7f7f7;
-}
-
-.fifthSection{
+.fifthSection {
   padding: 0 !important;
   margin: 0 !important;
 }
