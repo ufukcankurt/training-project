@@ -6,6 +6,7 @@ import HomeNav from "../../components/homeNav/HomeNav";
 import WhoWeAre from "../../components/whoWeAre/WhoWeAre";
 import PopularClasses from "../../components/popularClasses/PopularClasses";
 import OurTrainer from "../../components/ourTrainer/OurTrainer";
+import OurPricing from "../../components/ourPricing/OurPricing";
 
 const Homepage = () => {
   return (
@@ -20,6 +21,9 @@ const Homepage = () => {
       </section>
       <section className={`${styles.thirdSection} section`}>
         <OurTrainer />
+      </section>
+      <section className={`${styles.fourthSection} section`}>
+        <OurPricing />
       </section>
     </div>
   );
