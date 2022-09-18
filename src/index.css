@@ -41,6 +41,15 @@ code {
   background-color: gray;
 }
 
+:focus {
+  outline: 0;
+}
+
+::selection {
+  background: #ea4c23;
+  color: #fff;
+}
+
 .section {
   width: 100%;
   display: flex;
