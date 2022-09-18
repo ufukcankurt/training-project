@@ -1,0 +1,48 @@
+.item {
+  cursor: pointer;
+  color: #ea4c23;
+  font-size: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 10px 5px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+  line-height: 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  transition: all 0.2s ease-out 0s;
+}
+
+.facebook:hover {
+  background: #3b5998;
+  color: #fff;
+  border: 1px solid #3b5998;
+}
+
+.twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+  border: 1px solid #1da1f2;
+}
+
+.instagram:hover {
+  background: #e4405f;
+  color: #fff;
+  border: 1px solid #e4405f;
+}
+
+.youtube:hover {
+  background: #ff0000;
+  color: #fff;
+  border: 1px solid #ff0000;
+}
+
+.linkedin:hover {
+  background: #0077b5;
+  color: #fff;
+  border: 1px solid #0077b5;
+}
