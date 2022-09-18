@@ -1,5 +1,5 @@
 import styles from "./homepage.module.css";
-import React from "react";
+import React, { useState } from "react";
 import HomeBanner from "../../components/homeBanner/HomeBanner";
 import HomeNav from "../../components/homeNav/HomeNav";
 
@@ -11,28 +11,42 @@ import Statistic from "../../components/statistic/Statistic";
 import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
 import FooterBottom from "../../components/footerBottom/FooterBottom";
+import GoToTop from "../../components/goToTop/GoToTop";
 
 const Homepage = () => {
+  const [sticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 30) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <div className={`${styles.container}`}>
+      {sticky && <GoToTop />}
       <HomeNav />
       <HomeBanner />
-      <section className={`section`}>
+      <section className={`section`} id="about">
         <WhoWeAre />
       </section>
-      <section className={`${styles.secondSection} section`}>
+      <section className={`${styles.secondSection} section`} id="classes">
         <PopularClasses />
       </section>
-      <section className={`section`}>
+      <section className={`section`} id="trainers">
         <OurTrainer />
       </section>
-      <section className={`${styles.fourthSection} section`}>
+      <section className={`${styles.fourthSection} section`} id="pricing">
         <OurPricing />
       </section>
       <section>
         <Statistic className={`${styles.fifthSection} section`} />
       </section>
-      <section className={`${styles.sixthSection} section`}>
+      <section className={`${styles.sixthSection} section`} id="contact">
         <Contact />
       </section>
       <footer className={`${styles.footer} section`}>
