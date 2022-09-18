@@ -30,9 +30,10 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   background-color: aquamarine;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
 }
