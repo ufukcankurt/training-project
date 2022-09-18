@@ -29,7 +29,9 @@ const Homepage = () => {
   return (
     <div className={`${styles.container}`}>
       {sticky && <GoToTop />}
-      <HomeNav />
+      <section id="home">
+        <HomeNav />
+      </section>
       <HomeBanner />
       <section className={`section`} id="about">
         <WhoWeAre />
