@@ -1,3 +1,37 @@
+
+# Training Website
+
+- This site was designed for a trainer in England, developed with React.js
+
+> Completely original information has not been added to the site yet. 
+
+> ***If you want to see the project you can [visit.](https://training-project-xi.vercel.app/)***
+
+___
+
+
+## 📷 Screenshots
+
+<p align="center" style="padding: 10px">
+    <img alt="" src="./public/ss/1.png" width="80%">
+
+<p align="center" style="padding: 10px">
+    <img alt="" src="./public/ss/2.png" width="80%">
+
+<p align="center" style="padding: 10px">
+    <img alt="" src="./public/ss/3.png" width="80%">
+
+<p align="center" style="padding: 10px">
+    <img alt="" src="./public/ss/4.png" width="80%">
+
+<p align="center" style="padding: 10px">
+    <img alt="" src="./public/ss/5.png" width="80%">
+    
+<p align="center" style="padding: 10px">
+    <img alt="" src="./public/ss/6.png" width="80%">   
+
+----
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
