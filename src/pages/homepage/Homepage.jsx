@@ -12,6 +12,7 @@ import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
 import FooterBottom from "../../components/footerBottom/FooterBottom";
 import GoToTop from "../../components/goToTop/GoToTop";
+import HeaderFrame from "../../components/headerFrame/HeaderFrame";
 
 const Homepage = () => {
   const [sticky, setSticky] = useState(false);
@@ -32,7 +33,8 @@ const Homepage = () => {
       <section id="home">
         <HomeNav />
       </section>
-      <HomeBanner />
+      {/* <HomeBanner /> */}
+      <HeaderFrame/>
       <section className={`section`} id="about">
         <WhoWeAre />
       </section>
