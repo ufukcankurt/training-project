@@ -12,19 +12,19 @@ const pageInfos = {
 const whoWeAre = [
   {
     id: "01",
-    title: "be patient",
+    title: "Dynamic workouts",
     description:
       "Almost every workout incorporates dumbbells, medicine balls, battle ropes, bands, sandbags, parachutes, pull-up bars, ladders and other equipment in varied and dynamic ways to hit all muscle groups and push cardiovascular fitness.",
   },
   {
     id: "02",
-    title: "training hard",
+    title: "personalized results",
     description:
       "Whether you are looking to lose weight, build strength & tone muscle, or simply improve your overall health, our focus is to help you thrive and have fun working out!",
   },
   {
     id: "03",
-    title: "be strong",
+    title: "Research-Driven Training",
     description:
       "Our highly qualified trainers use the latest in sports science to make the classes productive, purposeful and fun!",
   },
