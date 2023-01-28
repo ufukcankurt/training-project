@@ -1,6 +1,5 @@
 import styles from "./homepage.module.css";
 import React, { useState } from "react";
-import HomeBanner from "../../components/homeBanner/HomeBanner";
 import HomeNav from "../../components/homeNav/HomeNav";
 
 import WhoWeAre from "../../components/whoWeAre/WhoWeAre";
@@ -13,6 +12,9 @@ import Footer from "../../components/footer/Footer";
 import FooterBottom from "../../components/footerBottom/FooterBottom";
 import GoToTop from "../../components/goToTop/GoToTop";
 import HeaderFrame from "../../components/headerFrame/HeaderFrame";
+import JoinOurBootcamp from './../../components/joinOurBootcamp/JoinOurBootcamp';
+import Comments from "../../components/comments/Comments";
+import Locations from "../../components/locations/Locations";
 
 const Homepage = () => {
   const [sticky, setSticky] = useState(false);
@@ -36,21 +38,27 @@ const Homepage = () => {
       {/* <HomeBanner /> */}
       <HeaderFrame/>
       <section className={`section`} id="about">
-        <WhoWeAre />
-      </section>
-      <section className={`${styles.secondSection} section`} id="classes">
         <PopularClasses />
       </section>
-      <section className={`section`} id="trainers">
+      <section className={`${styles.secondSection} section`} id="about">
+        <WhoWeAre />
+      </section>
+      <section className={`section`}>
+        <JoinOurBootcamp />
+      </section>
+      <section className={`${styles.fourthSection} section`} id="trainers">
         <OurTrainer />
       </section>
-      <section className={`${styles.fourthSection} section`} id="pricing">
+      <section className={`section`} id="pricing">
         <OurPricing />
       </section>
-      <section>
-        <Statistic className={`${styles.fifthSection} section`} />
+      <section className={`${styles.sixthSection} section`} id="about">
+        <Comments/>
       </section>
-      <section className={`${styles.sixthSection} section`} id="contact">
+      <section className={`section`} id="about">
+        <Locations/>
+      </section>
+      <section className={`${styles.eigthSection} section`} id="contact">
         <Contact />
       </section>
       <footer className={`${styles.footer} section`}>
