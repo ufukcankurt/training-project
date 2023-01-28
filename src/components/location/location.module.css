@@ -1,0 +1,42 @@
+.container {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	margin-top: 75px;
+	margin-bottom: 20px;
+}
+
+.locationInfo {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.svg {
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+}
+
+.svgLocation {
+	width: 28px;
+	height: 28px;
+	margin-right: 12px;
+}
+
+.date {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.map {
+	margin-top: 10px;
+}
+
+.map iframe{
+	width: 85%;
+  height: 340px;
+}
