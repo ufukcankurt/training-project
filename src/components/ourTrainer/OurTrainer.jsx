@@ -9,48 +9,56 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const pageInfos = {
-  firstTitle: "OUR",
-  secondTitle: "TRAINNER",
+  firstTitle: "MEET ",
+  secondTitle: "THE TEAM",
   description:
     "We’re not like other gyms. We won’t tie you into a contract. Or charge you a fortune every month. So make yourself at home and take a look around.",
 };
 
 const trainers = [
   {
-    name: "Charlie Perez",
+    name: "Okan Caylak",
     position: "Personal Trainer",
     description:
-      "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
+      "With over a decade of individual and group training experience, Okan founded Mammoth Fitness UK and leads much of the instruction. He possesses a Bachelor degree in Sports Science and a level 3 personal training diploma. Having worked as a Physical Education Teacher at St John's RC Special Needs School, Okan has developed an approach to instruction where he is intune with and meets all class participants’ needs. He is incredibly passionate about helping people improve their health, performance and wellbeing.",
+    qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
+    specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
     image: "./img/trainer-1.png",
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
     instagram: "https://www.instagram.com/",
   },
+  // {
+  //   name: "Gabriella Morales",
+  //   position: "Personal Trainer",
+  //   description:
+  //     "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
+  //   qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
+  //   specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
+  //   image: "./img/trainer-2.png",
+  //   facebook: "https://www.facebook.com/",
+  //   twitter: "https://twitter.com/",
+  //   instagram: "https://www.instagram.com/",
+  // },
+  // {
+  //   name: "Tommy Romero",
+  //   position: "Personal Trainer",
+  //   description:
+  //     "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
+  //   qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
+  //   specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
+  //   image: "./img/trainer-3.png",
+  //   facebook: "https://www.facebook.com/",
+  //   twitter: "https://twitter.com/",
+  //   instagram: "https://www.instagram.com/",
+  // },
   {
-    name: "Gabriella Morales",
+    name: "TONY RIDDLE",
     position: "Personal Trainer",
     description:
       "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
-    image: "./img/trainer-2.png",
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
-    instagram: "https://www.instagram.com/",
-  },
-  {
-    name: "Tommy Romero",
-    position: "Personal Trainer",
-    description:
-      "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
-    image: "./img/trainer-3.png",
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
-    instagram: "https://www.instagram.com/",
-  },
-  {
-    name: "Lauren Bailey",
-    position: "Personal Trainer",
-    description:
-      "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
+    qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
+    specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
     image: "./img/trainer-4.png",
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
@@ -65,25 +73,41 @@ const OurTrainer = () => {
       <div className={styles.content}>
         {trainers.map((trainer, i) => (
           <div key={i} className={styles.item}>
-            <div className={styles.trainerImg}>
-              <img src={trainer.image} alt="" />
-            </div>
-            <div className={styles.trainerInfos}>
-              <div className={styles.trainerTitles}>
-                <p className={styles.name}>{trainer.name}</p>
-                <p className={styles.position}>{trainer.position}</p>
+            <div className={styles.trainerGeneral}>
+              <div className={styles.trainerImg}>
+                <img src={trainer.image} alt="" />
               </div>
-              <div className={styles.trainerDesc}>{trainer.description}</div>
-              <div className={styles.trainerSocials}>
-                <a className={styles.facebook} href={trainer.facebook}>
-                  <FontAwesomeIcon icon={faFacebookSquare} />
-                </a>
-                <a className={styles.twitter} href={trainer.twitter}>
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                <a className={styles.instagram} href={trainer.instagram}>
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
+              <div className={styles.trainerInfos}>
+                <div className={styles.trainerTitles}>
+                  <p className={styles.name}>{trainer.name}</p>
+                  <p className={styles.position}>{trainer.position}</p>
+                </div>
+                <div className={styles.trainerDesc}>{trainer.description}</div>
+                <div className={styles.trainerSocials}>
+                  <a className={styles.facebook} href={trainer.facebook}>
+                    <FontAwesomeIcon icon={faFacebookSquare} />
+                  </a>
+                  <a className={styles.twitter} href={trainer.twitter}>
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                  <a className={styles.instagram} href={trainer.instagram}>
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className={styles.trainerSpecific}>
+              <div className={styles.qualifications}>
+                <h2 className={styles.trainerSpecificTitle}>Qualifications</h2>
+                {trainer.qualifications.map((qualification, i) =>
+                  <p key={i} className={styles.trainerSpecificDesc}>{qualification}</p>
+                )}
+              </div>
+              <div className={styles.specialization}>
+                <h2 className={styles.trainerSpecificTitle}>Specialization</h2>
+                {trainer.specialization.map((specialization, i) =>
+                  <p key={i} className={styles.trainerSpecificDesc}>{specialization}</p>
+                )}
               </div>
             </div>
           </div>

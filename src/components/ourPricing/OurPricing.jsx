@@ -11,22 +11,22 @@ const pageInfos = {
 
 const prices = [
   {
-    title: "Beginner",
-    price: "$30",
-    month: "1 month",
-    body: ["GYM", "FITNESS", "SAUNA", "MASSAGE", "X", "X"],
+    title: "10 SESSIONS PACKAGE",
+    price: "£ 80",
+    month: "90 days",
+    body: [],
   },
   {
-    title: "Standart",
-    price: "$60",
-    month: "1 month",
-    body: ["GYM", "FITNESS", "SAUNA", "MASSAGE", "TRAINER", "X"],
+    title: "5 SESSIONS PACKAGE",
+    price: "£ 45",
+    month: "45 days",
+    body: [],
   },
   {
-    title: "Pro",
-    price: "$90",
-    month: "1 month",
-    body: ["GYM", "FITNESS", "SAUNA", "MASSAGE", "TRAINER", "DRINK"],
+    title: "PAY AS YOU GO",
+    price: "£ 12",
+    month: "---",
+    body: [],
   },
 ];
 
@@ -42,13 +42,13 @@ const OurPricing = () => {
               <span className={styles.price}>{price.price}</span>
               <p className={styles.month}>{price.month}</p>
             </div>
-            <div className={styles.body}>
+           {price.body.length > 0 && <div className={styles.body}>
               <ul>
                 {price.body.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-            </div>
+            </div>}
           </div>
         ))}
       </div>

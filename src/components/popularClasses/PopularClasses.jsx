@@ -4,10 +4,10 @@ import React from "react";
 import SectionTitle from "../../common/sectionTitle/SectionTitle";
 
 const pageInfos = {
-  firstTitle: "POPULAR",
-  secondTitle: "CLASSES",
+  firstTitle: "Join",
+  secondTitle: "Our Family",
   description:
-    "We’re not like other gyms. We won’t tie you into a contract. Or charge you a fortune every month. So make yourself at home and take a look around.",
+    "Join our fitness community of motivated and supportive individuals as we train together: our family ranges from those new to circuits and weight-training to athletes who seek challenging workouts to all those in-between! Whatever your level, you will get the workout, support and community you’ve come for!",
 };
 
 const items = [

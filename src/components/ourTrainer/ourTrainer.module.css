@@ -1,95 +1,132 @@
 .container {
-  max-width: 1200px;
-  width: 100%;
-  background-color: transparent;
-  margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	background-color: transparent;
+	margin: 0 auto;
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 75px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 75px;
 }
 
 .item {
-  width: 49%;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.trainerGeneral {
+	width: 49%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .trainerImg {
-  width: 40%;
-  min-height: 1px;
-  padding: 0 15px;
+	width: 40%;
+	min-height: 1px;
+	padding: 0 15px;
 }
 
 .trainerImg img {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
+	width: 100%;
+	vertical-align: middle;
 }
 
 .trainerInfos {
-  width: 58%;
+	width: 58%;
 }
 
 .name {
-  font-size: 18px;
-  font-weight: 700;
-  margin-top: 26px;
-  margin-bottom: 13px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 26px;
+	margin-bottom: 13px;
 }
 
 .position {
-  font-size: 12px;
-  color: #bbbbbb;
-  margin-bottom: 10px;
+	font-size: 12px;
+	color: #bbbbbb;
+	margin-bottom: 10px;
 }
 
 .trainerDesc {
-  line-height: 28px;
-  color: #666666;
+	line-height: 28px;
+	color: #666666;
 }
 
 .trainerSocials {
-  margin-top: 25px;
+	margin-top: 25px;
 }
 
 .trainerSocials a {
-  cursor: pointer;
-  color: #000;
-  font-size: 1.1rem;
-  background: #ffffff;
-  color: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin: 10px 5px;
-  overflow: hidden;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: top;
-  line-height: 36px;
-  width: 36px;
-  height: 36px;
-  transition: all 0.2s ease-out 0s;
+	cursor: pointer;
+	color: #000;
+	font-size: 1.1rem;
+	background: #ffffff;
+	color: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	margin: 10px 5px;
+	overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: top;
+	line-height: 36px;
+	width: 36px;
+	height: 36px;
+	transition: all 0.2s ease-out 0s;
 }
 
 .facebook:hover {
-  background: #3b5998;
-  color: #fff;
-  border: 1px solid #3b5998;
+	background: #3b5998;
+	color: #fff;
+	border: 1px solid #3b5998;
 }
 
 .twitter:hover {
-  background: #1da1f2;
-  color: #fff;
-  border: 1px solid #1da1f2;
+	background: #1da1f2;
+	color: #fff;
+	border: 1px solid #1da1f2;
 }
 
 .instagram:hover {
-  background: #e4405f;
-  color: #fff;
-  border: 1px solid #e4405f;
+	background: #e4405f;
+	color: #fff;
+	border: 1px solid #e4405f;
+}
+
+.trainerSpecific {
+	width: 49%;
+	display: flex;
+  flex-direction: column;
+}
+
+.qualifications,
+.specialization {
+	width: 98%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.specialization {
+}
+
+.trainerSpecificTitle {
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 26px;
+	margin-bottom: 13px;
+}
+
+.trainerSpecificDesc {
+	font-size: 14px;
+	line-height: 28px;
+	color: #666666;
+	font-family: 'Montserrat', sans-serif;
 }

@@ -6,7 +6,7 @@ const pageInfos = {
   firstTitle: "WHO",
   secondTitle: "WE ARE",
   description:
-    "We’re not like other gyms. We won’t tie you into a contract. Or charge you a fortune every month. So make yourself at home and take a look around.",
+    `A fitness family that challenges and helps each other--the best part is we have great fun doing it!`,
 };
 
 const whoWeAre = [
@@ -14,26 +14,26 @@ const whoWeAre = [
     id: "01",
     title: "be patient",
     description:
-      "It has survived not only five centuries, but also the leap into electronic typesetting",
+      "Almost every workout incorporates dumbbells, medicine balls, battle ropes, bands, sandbags, parachutes, pull-up bars, ladders and other equipment in varied and dynamic ways to hit all muscle groups and push cardiovascular fitness.",
   },
   {
     id: "02",
     title: "training hard",
     description:
-      "It was popularised in the 1960s with the release of Letraset sheets containing",
+      "Whether you are looking to lose weight, build strength & tone muscle, or simply improve your overall health, our focus is to help you thrive and have fun working out!",
   },
   {
     id: "03",
     title: "be strong",
     description:
-      "No one rejects, dislikes, or avoids pleasure itself, because it is pleasure",
+      "Our highly qualified trainers use the latest in sports science to make the classes productive, purposeful and fun!",
   },
-  {
-    id: "04",
-    title: "be different",
-    description:
-      "It has survived not only five centuries, but also the leap into electronic typesetting",
-  },
+  // {
+  //   id: "04",
+  //   title: "be different",
+  //   description:
+  //     "It has survived not only five centuries, but also the leap into electronic typesetting",
+  // },
 ];
 
 const WhoWeAre = () => {
@@ -43,10 +43,7 @@ const WhoWeAre = () => {
       <div className={styles.content}>
         <div className={styles.leftSide}>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Okan Caylak Fitness professional and Physical education teacher founded Mammoth Fitness UK in 2019 to fuse key aspects of training: circuit training, weight-lifting, HIIT, functional movement, etc.! His vision was to create a community in Palmers Green/Winchmore/Southgate of great people coming together for dynamic, challenging and engaging classes (people who would workout together and grab coffee or drinks afterwards). Encouraged by the rapid growth of Mammoth Fitness UK and the growing demand of its community, Okan has partnered with friends/trainers to expand the community throughout Enfield!
           </p>
           <div className={styles.infos}>
             <ul>
