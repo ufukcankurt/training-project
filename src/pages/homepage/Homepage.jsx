@@ -36,7 +36,7 @@ const Homepage = () => {
         <HomeNav />
       </section>
       {/* <HomeBanner /> */}
-      <HeaderFrame/>
+      <HeaderFrame />
       <section className={`section`} id="about">
         <PopularClasses />
       </section>
@@ -46,17 +46,17 @@ const Homepage = () => {
       <section className={`section`}>
         <JoinOurBootcamp />
       </section>
-      <section className={`${styles.fourthSection} section`} id="trainers">
+      <section className={`${styles.fourthSection} section`} id="comment">
+        <Comments />
+      </section>
+      <section className={`section`} id="team">
         <OurTrainer />
       </section>
-      <section className={`section`} id="pricing">
+      <section className={`${styles.sixthSection} section`} id="about">
         <OurPricing />
       </section>
-      <section className={`${styles.sixthSection} section`} id="about">
-        <Comments/>
-      </section>
-      <section className={`section`} id="about">
-        <Locations/>
+      <section className={`section`} id="locations">
+        <Locations />
       </section>
       <section className={`${styles.eigthSection} section`} id="contact">
         <Contact />
