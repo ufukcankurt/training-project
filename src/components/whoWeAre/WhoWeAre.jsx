@@ -36,6 +36,18 @@ const whoWeAre = [
   // },
 ];
 
+const items = [
+  {
+    image: "./img/join-2.jpg",
+  },
+  {
+    image: "./img/join-3.jpg",
+  },
+  {
+    image: "./img/join-1.jpg",
+  },
+];
+
 const WhoWeAre = () => {
   return (
     <div className={styles.container}>
@@ -61,7 +73,15 @@ const WhoWeAre = () => {
           </div>
         </div>
         <div className={styles.rightSide}>
-          <img src="./img/whoweare3.jpg" alt="" />
+        {items.map((item, i) => (
+          <div className={styles.item}>
+            <div className={styles.image}>
+              <img src={item.image} alt="" />
+            </div>
+            <div className={styles.inner}>
+            </div>
+          </div>
+        ))}
         </div>
       </div>
     </div>
