@@ -22,7 +22,7 @@ const Footer = () => {
           <Socials />
           </div>
         </div>
-        <div className={styles.item}>
+        <div className={`${styles.item} ${styles.aboutus}`}>
           <p className={styles.title}>About Us</p>
           <p className={`${styles.text} ${styles.about}`}>
             We’re not like other gyms. We won’t tie you into a contract. Or
