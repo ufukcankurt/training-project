@@ -22,7 +22,9 @@ const HomeNav = () => {
       }`}
     >
       <div className={styles.content}>
-        <div className={styles.logo}>LOGO</div>
+        <div className={styles.logo}>
+          <img src="./img/logo5.png" alt="" />
+        </div>
         <div className={styles.links}>
           <ul className={styles.ul}>
             <li className={styles.li}>
@@ -51,38 +53,38 @@ const HomeNav = () => {
             </li>
             <li className={styles.li}>
               <Link
-                to="classes"
+                to="comment"
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={500}
               >
-                <span className={styles.link}>Classes</span>
+                <span className={styles.link}>Testimonials</span>
               </Link>
             </li>
             <li className={styles.li}>
               <Link
-                to="trainers"
+                to="team"
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={500}
               >
-                <span className={styles.link}>Trainers</span>
+                <span className={styles.link}>Team</span>
               </Link>
             </li>
             <li className={styles.li}>
               <Link
-                to="pricing"
+                to="locations"
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={500}
               >
-                <span className={styles.link}>Pricing</span>
+                <span className={styles.link}>Locations</span>
               </Link>
             </li>
             <li className={styles.li}>
