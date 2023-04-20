@@ -12,42 +12,42 @@ const pageInfos = {
 
 const items = [
   {
-    image: "./img/courses-1.jpg",
+    image: "./img/join-26.jpg",
     title: "crosfit",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
     price: "Free",
   },
   {
-    image: "./img/courses-2.jpg",
+    image: "./img/join-2.jpg",
     title: "AEROBIC",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
     price: "Free",
   },
   {
-    image: "./img/courses-3.jpg",
+    image: "./img/join-3.jpg",
     title: "GYM AND FITNESS",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
     price: "Free",
   },
   {
-    image: "./img/courses-4.jpg",
+    image: "./img/join-4.jpg",
     title: "BOXING WORKOUT",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
     price: "$20",
   },
   {
-    image: "./img/courses-5.jpg",
+    image: "./img/join-1.jpg",
     title: "ZUMBA",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
     price: "$30",
   },
   {
-    image: "./img/courses-6.jpg",
+    image: "./img/join-23.jpg",
     title: "YOGA FITNESS",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
@@ -60,7 +60,8 @@ const PopularClasses = () => {
     <div className={styles.container}>
       <SectionTitle pageInfos={pageInfos} />
       <div className={styles.content}>
-        {items.map((item, i) => (
+        <img src="./img/join.jpg" alt="" />
+        {/* {items.map((item, i) => (
           <div className={styles.item}>
             <div className={styles.image}>
               <img src={item.image} alt="" />
@@ -82,7 +83,7 @@ const PopularClasses = () => {
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
