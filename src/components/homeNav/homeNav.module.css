@@ -108,6 +108,18 @@
 }
 
 @media (max-width: 767.98px) {
+	.logo {
+		height: 50px;
+	}
+
+	.sticky {
+		height: 60px;
+	}
+
+	.notSticky {
+		height: 60px;
+	}
+
 	.links {
 		display: none;
 	}
