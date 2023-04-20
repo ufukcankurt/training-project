@@ -109,7 +109,9 @@
 
 @media (max-width: 767.98px) {
 	.logo {
-		height: 50px;
+		width: 81px;
+		height: auto;
+		top: 15px;
 	}
 
 	.sticky {
