@@ -23,7 +23,7 @@ const trainers = [
       "With over a decade of individual and group training experience, Okan founded Mammoth Fitness UK and leads much of the instruction. He possesses a Bachelor degree in Sports Science and a level 3 personal training diploma. Having worked as a Physical Education Teacher at St John's RC Special Needs School, Okan has developed an approach to instruction where he is intune with and meets all class participants’ needs. He is incredibly passionate about helping people improve their health, performance and wellbeing.",
     qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
     specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
-    image: "./img/trainer-1.png",
+    image: "./img/okancaylak.png",
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
     instagram: "https://www.instagram.com/",
@@ -59,7 +59,7 @@ const trainers = [
       "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
     qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
     specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
-    image: "./img/trainer-4.png",
+    image: "./img/okancaylak.png",
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
     instagram: "https://www.instagram.com/",
@@ -100,13 +100,13 @@ const OurTrainer = () => {
               <div className={styles.qualifications}>
                 <h2 className={styles.trainerSpecificTitle}>Qualifications</h2>
                 {trainer.qualifications.map((qualification, i) =>
-                  <p key={i} className={styles.trainerSpecificDesc}>{qualification}</p>
+                  <p key={i} className={styles.trainerSpecificDesc}> <span className={styles.dot}>•</span> {qualification}</p>
                 )}
               </div>
               <div className={styles.specialization}>
                 <h2 className={styles.trainerSpecificTitle}>Specialization</h2>
                 {trainer.specialization.map((specialization, i) =>
-                  <p key={i} className={styles.trainerSpecificDesc}>{specialization}</p>
+                  <p key={i} className={styles.trainerSpecificDesc}> <span className={styles.dot}>•</span> {specialization}</p>
                 )}
               </div>
             </div>
