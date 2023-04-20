@@ -111,7 +111,8 @@
 	.logo {
 		width: 81px;
 		height: auto;
-		top: 15px;
+		top: 16px;
+		margin-left: 10px;
 	}
 
 	.sticky {
