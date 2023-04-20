@@ -1,10 +1,11 @@
 .container {
-	width: 48%;
+	width: 32%;
 	display: flex;
 	flex-direction: column;
 }
 
 .title {
+	font-size: 1.4rem;
 	margin-top: 75px;
 	margin-bottom: 20px;
 }
@@ -12,7 +13,7 @@
 .locationInfo {
 	display: flex;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .svg {
@@ -28,7 +29,10 @@
 }
 
 .date {
-	font-size: 16px;
+	display: flex;
+	align-items: center;
+	min-height: 54px;
+	font-size: 0.9rem;
 	font-weight: 700;
 }
 
@@ -36,7 +40,30 @@
 	margin-top: 10px;
 }
 
-.map iframe{
-	width: 85%;
-  height: 340px;
+.map iframe {
+	width: 100%;
+	height: 340px;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 48%;
+	}
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+	.title {
+		font-size: 1.4rem;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 500.98px) {
+	.container {
+		width: 98%;
+	}
 }

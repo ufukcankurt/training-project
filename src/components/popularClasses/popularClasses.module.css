@@ -1,124 +1,152 @@
 .container {
-  max-width: 1200px;
-  width: 100%;
-  background-color: transparent;
-  margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	background-color: transparent;
+	margin: 0 auto;
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 75px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 75px;
+}
+
+.content img {
+	width: 100%;
 }
 
 .item {
-  width: 32%;
-  position: relative;
-  margin-bottom: 30px;
+	width: 32%;
+	position: relative;
+	margin-bottom: 30px;
 }
 
 .image {
-  overflow: hidden;
-  position: relative;
+	overflow: hidden;
+	position: relative;
 }
 
 .image img {
-  max-width: 100%;
-  /* object-fit: cover; */
-  vertical-align: middle;
-  height: auto;
+	max-width: 100%;
+	/* object-fit: cover; */
+	vertical-align: middle;
+	height: auto;
 }
 
 .inner {
-  border: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  background: rgba(0, 0, 0, 0.6) !important;
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.6) !important;
 }
 
 .header {
-  -webkit-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
-  background: none;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  margin-top: -40px;
-  z-index: 99;
-  padding: 0 20px;
-  border-top: none;
-  text-align: center;
+	-webkit-transition: all 0.35s;
+	-o-transition: all 0.35s;
+	transition: all 0.35s;
+	background: none;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -40px;
+	z-index: 99;
+	padding: 0 20px;
+	border-top: none;
+	text-align: center;
 }
 
 .h4,
 .insideh4 {
-  height: 65px;
-  padding-top: 24px !important;
-  background: url(../../../public/img/bg-title.png) no-repeat center center !important;
-  padding: 0 0 12px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
+	height: 65px;
+	padding-top: 24px !important;
+	background: url(../../../public/img/bg-title.png) no-repeat center center !important;
+	padding: 0 0 12px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .hovered {
-  background: rgba(234, 76, 35, 0.8);
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99;
-  color: #fff;
-  text-align: center;
-  padding: 20px 20px 0;
+	background: rgba(234, 76, 35, 0.8);
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.35s;
+	-o-transition: all 0.35s;
+	transition: all 0.35s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	color: #fff;
+	text-align: center;
+	padding: 20px 20px 0;
 }
 
 .desc {
-  line-height: 1.875;
+	line-height: 1.875;
 }
 
 .price {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 24px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 24px;
 }
 
 .item:hover .hovered {
-  opacity: 1;
-  filter: alpha(opacity=1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+	opacity: 1;
+	filter: alpha(opacity=1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
 }
 
 .item:hover .h4 {
-  opacity: 0;
+	opacity: 0;
 }
+
+@media (max-width: 1200px) {
+	.container {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 991.98px) {
+  .item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 767.98px) {
+	.content {
+		margin-top: 25px;
+	}
+
+  .item {
+    width: 48%;
+  }
+}
+

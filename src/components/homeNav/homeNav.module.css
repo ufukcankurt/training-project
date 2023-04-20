@@ -15,9 +15,17 @@
 }
 
 .logo {
+	height: 72px;
 	font-weight: 700;
 	font-size: 40px;
 	color: #fff;
+	position: relative;
+	top: 3.4px;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
 }
 
 /*
@@ -28,13 +36,14 @@
 }*/
 
 .sticky {
+	height: 82px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 999;
 	padding-top: 0.2rem;
 	padding-bottom: 0.2rem;
-	background-color: rgba(0, 0, 0, .975);
+	background-color: rgba(0, 0, 0, 0.975);
 	backdrop-filter: blur(10px);
 }
 
@@ -83,4 +92,23 @@
 .link {
 	font-weight: 700;
 	font-size: 18px;
+}
+
+@media (max-width: 850.98px) {
+	.li {
+		margin: 0 5px;
+	}
+
+	.li a {
+		text-decoration: none;
+		color: #fff;
+		font-weight: 500;
+		padding: 10 5px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.links {
+		display: none;
+	}
 }

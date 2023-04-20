@@ -15,19 +15,20 @@
 .item {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .trainerGeneral {
-	width: 49%;
+	width: 98%;
 	display: flex;
 	justify-content: space-between;
 }
 
 .trainerImg {
-	width: 40%;
+	width: 27%;
 	min-height: 1px;
 	padding: 0 15px;
 }
@@ -38,23 +39,24 @@
 }
 
 .trainerInfos {
-	width: 58%;
+	width: 70%;
 }
 
 .name {
-	font-size: 18px;
+	font-size: 1.1rem;
 	font-weight: 700;
 	margin-top: 26px;
 	margin-bottom: 13px;
 }
 
 .position {
-	font-size: 12px;
+	font-size: 0.8rem;
 	color: #bbbbbb;
 	margin-bottom: 10px;
 }
 
 .trainerDesc {
+	font-size: 0.9rem;
 	line-height: 28px;
 	color: #666666;
 }
@@ -101,9 +103,10 @@
 }
 
 .trainerSpecific {
-	width: 49%;
+	width: 75%;
 	display: flex;
-  flex-direction: column;
+	margin-left: auto;
+	margin-bottom: 30px;
 }
 
 .qualifications,
@@ -118,15 +121,100 @@
 }
 
 .trainerSpecificTitle {
-	font-size: 18px;
+	font-size: 1.1rem;
 	font-weight: 700;
 	margin-top: 26px;
 	margin-bottom: 13px;
 }
 
 .trainerSpecificDesc {
-	font-size: 14px;
+	font-size: 0.9rem;
+	text-align: center;
 	line-height: 28px;
 	color: #666666;
 	font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.content {
+		margin-top: 25px;
+	}
+
+	.item {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.trainerImg {
+		width: 25%;
+	}
+
+	.trainerInfos {
+		width: 70%;
+	}
+
+	.trainerGeneral {
+		width: 95%;
+	}
+
+	.trainerSpecific {
+		width: 99%;
+		flex-direction: row;
+		margin-top: 20px;
+	}
+
+	.dot {
+		font-size: 1.6rem;
+	}
+
+	.qualifications,
+	.specialization {
+		width: 49%;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.content {
+		padding: 0 10px;
+	}
+
+	.item {
+		padding-top: 10px;
+	}
+
+	.trainerGeneral {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.trainerImg {
+		width: 50%;
+	}
+
+	.trainerInfos {
+		width: 98%;
+	}
+
+	.trainerSocials {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 500.98px) {
+	.trainerSpecific {
+		flex-direction: column;
+	}
+
+	.qualifications,
+	.specialization {
+		width: 100%;
+	}
 }

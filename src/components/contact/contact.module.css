@@ -21,7 +21,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 25px;
   text-transform: capitalize;
@@ -49,6 +49,7 @@
   border: 1px solid rgba(198, 198, 198, 0.6);
   border-radius: 10px;
   font-weight: 500;
+  font-size: .9rem;
   transition: 0.3s ease-in-out;
   font-family: "Roboto Slab", serif;
 }
@@ -71,7 +72,7 @@ input[type="text"]:focus,
   width: 150px;
   padding: 15px 20px;
   margin: 10px 0 0 0;
-  font-size: 14px;
+  font-size: .9rem;
   color: #fff;
   background-color: #ea4c23;
   text-align: center;
@@ -99,7 +100,7 @@ input[type="text"]:focus,
 }
 
 .info{
-    font-size: 14px;
+    font-size: .9rem;
     color: #6c757d;
     line-height: 1.8;
     margin-bottom: 10px;
@@ -108,6 +109,50 @@ input[type="text"]:focus,
 }
 
 .mainInfo{
+  font-size: .9rem;
     margin-top: 25px;
     padding-right: 200px;
+}
+
+
+@media (max-width: 1200px) {
+  .container{
+		padding: 0 10px;
+	}
+
+  .infoSide {
+    padding: 0 10px;
+  }
+
+  .mainInfo{
+    padding-right: 20px;
+}
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+  .content{
+    margin-top: 20px;
+  }
+
+  .title{
+    margin-bottom: 20px;
+  }
+
+  .inputContainer{
+    margin-bottom: 20px;
+  }
+
+  .formSide {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .infoSide {
+    display: none;
+  }
 }

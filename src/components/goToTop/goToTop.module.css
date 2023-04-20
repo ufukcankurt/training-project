@@ -1,6 +1,7 @@
 .container {
   cursor: pointer;
   position: fixed;
+  z-index: 999;
   bottom: 50px;
   right: 50px;
   color: #fff;
@@ -24,4 +25,14 @@
     background: #ea4c23;
     color: #fff;
     transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+	.container {
+    bottom: 20px;
+    right: 20px;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+	}
 }

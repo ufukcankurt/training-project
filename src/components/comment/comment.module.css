@@ -20,7 +20,7 @@
 
 .text {
 	text-align: center;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: italic;
 	font-weight: 400;
 	color: #aaaaaa;
@@ -42,9 +42,19 @@
 }
 
 .username {
-	margin-top: 30px;
-	font-size: 18px;
+	font-size: 1.1rem;
 	font-weight: 700;
 	margin-top: 26px;
 	margin-bottom: 13px;
+}
+
+@media (max-width: 767.98px) {
+	.svg{
+		width: 40px;
+		height: 40px;
+	}
+
+	.text {
+		padding: 0 45px;
+	}
 }
