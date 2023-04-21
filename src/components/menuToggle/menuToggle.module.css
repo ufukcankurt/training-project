@@ -1,6 +1,5 @@
 .container {
-  display: block;
-  /* margin-right: 12px; */
+  display: none;
   position: fixed;
   top: 12px;
   right: 20px;
@@ -29,4 +28,10 @@
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    display: block;
+  }
 }
