@@ -25,7 +25,16 @@ const HomeNav = () => {
     >
       <div className={styles.content}>
         <div className={styles.logo}>
-          <img src="./img/logo5.png" alt="" />
+          <Link
+            to="home"
+            activeClass={styles.active}
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            <img src="./img/logo5.png" alt="" />
+          </Link>
         </div>
         <div className={styles.links}>
           <ul className={styles.ul}>
