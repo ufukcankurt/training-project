@@ -1,0 +1,95 @@
+.container {
+	width: 103%;
+	height: 103vh;
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	left: 0;
+	background-color: #ea4c23;
+	overflow: scroll;
+	padding: 100px 0;
+}
+
+.left {
+	width: 100%;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #000;
+}
+
+.ul {
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch; /* mobile safari*/
+	list-style: none;
+}
+
+.li {
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+}
+
+.right {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.socials {
+	/* margin-top: 50px; */
+	width: calc(100% - 24px);
+	margin: 0 12px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials {
+	margin-top: 25px;
+}
+
+.socials a {
+	cursor: pointer;
+	color: #000;
+	font-size: 1.1rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	margin: 10px 5px;
+	overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: top;
+	line-height: 36px;
+	width: 36px;
+	height: 36px;
+	transition: all 0.2s ease-out 0s;
+}
+
+.facebook{
+	background: #3b5998;
+	color: #fff;
+	border: 1px solid #3b5998;
+}
+
+.twitter {
+	background: #1da1f2;
+	color: #fff;
+	border: 1px solid #1da1f2;
+}
+
+.instagram{
+	background: #e4405f;
+	color: #fff;
+	border: 1px solid #e4405f;
+}
