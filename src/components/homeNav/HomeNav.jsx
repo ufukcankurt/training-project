@@ -1,9 +1,12 @@
 import styles from "./homeNav.module.css";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import MenuToggle from "../menuToggle/MenuToggle";
+import MenuMobil from "../menuMobil/MenuMobil";
 
 const HomeNav = () => {
   const [sticky, setSticky] = useState(false);
+  const [isActive, setIsActive] = useState(false)
 
   const handleScroll = () => {
     if (window.scrollY >= 30) {
@@ -17,9 +20,8 @@ const HomeNav = () => {
 
   return (
     <div
-      className={`${styles.container} ${
-        sticky ? styles.notSticky : styles.sticky
-      }`}
+      className={`${styles.container} ${sticky ? styles.notSticky : styles.sticky
+        }`}
     >
       <div className={styles.content}>
         <div className={styles.logo}>
@@ -101,6 +103,8 @@ const HomeNav = () => {
             </li>
           </ul>
         </div>
+        <MenuToggle isActive={isActive} setIsActive={setIsActive} />
+        {isActive ? <MenuMobil setIsActive={setIsActive} isActive={isActive} /> : ""}
       </div>
     </div>
   );
