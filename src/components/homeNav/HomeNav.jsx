@@ -1,5 +1,5 @@
 import styles from "./homeNav.module.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import MenuToggle from "../menuToggle/MenuToggle";
 import MenuMobil from "../menuMobil/MenuMobil";
@@ -16,8 +16,15 @@ const HomeNav = () => {
     }
   };
 
-  window.addEventListener("scroll", handleScroll);
+  useEffect(()=> {
+    if(isActive){
+      document.body.style.overflow = "hidden"
+    }
+  }, [isActive])
 
+  window.addEventListener("scroll", handleScroll);
+console.log("doc:", document)
+console.log("doc body:", document.body)
   return (
     <div
       className={`${styles.container} ${sticky ? styles.notSticky : styles.sticky
