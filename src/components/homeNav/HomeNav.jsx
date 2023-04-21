@@ -16,17 +16,15 @@ const HomeNav = () => {
     }
   };
 
-  useEffect(()=> {
-    if(isActive){
+  useEffect(() => {
+    if (isActive) {
       document.body.style.overflow = "hidden"
-    }else{
+    } else {
       document.body.style.overflow = "auto"
     }
   }, [isActive])
 
   window.addEventListener("scroll", handleScroll);
-console.log("doc:", document)
-console.log("doc body:", document.body)
   return (
     <div
       className={`${styles.container} ${sticky ? styles.notSticky : styles.sticky
