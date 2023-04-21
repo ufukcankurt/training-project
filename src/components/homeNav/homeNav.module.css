@@ -121,6 +121,8 @@
 
 	.notSticky {
 		height: 60px;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	.links {
