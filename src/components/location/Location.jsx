@@ -14,7 +14,7 @@ const Location = ({location}) => {
         <p className={styles.date}>{location.date}</p>
       </div>
       <div className={styles.map}>
-        <iframe id="gmap_canvas" src={location.src} frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <iframe id="gmap_canvas" src={location.src} frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
       </div>
     </div>
   )
