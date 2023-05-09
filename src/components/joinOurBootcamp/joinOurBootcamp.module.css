@@ -55,7 +55,7 @@
 
 .number {
 	font-size: 2rem;
-	color: #ea4c23;
+	color: #C20F2D;
 	vertical-align: text-top;
 	line-height: 1;
 	position: relative;
@@ -89,40 +89,35 @@
 }
 
 @media (max-width: 991.98px) {
+  .leftSide {
+    width: 58%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 @media (max-width: 767.98px) {
-	.content {
-		margin-top: 25px;
-	}
+  .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
 
-	.leftSide {
-		padding-left: 2%;
-		padding-right: 2%;
-	}
-
-	.rightSide {
-		padding-left: 20px;
-	}
-
-	.infos {
-		padding-left: 0;
-	}
+  .infos {
+    padding-left: 0;
 }
 
-@media (max-width: 580.98px) {
-	.content {
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-items: center;
-	}
+  .leftSide {
+    width: 95%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-	.rightSide {
-		width: 50%;
-		margin-bottom: 40px;
-	}
-
-	.leftSide {
-		width: 95%;
-	}
+  .rightSide {
+    width: 85%;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
 }
+

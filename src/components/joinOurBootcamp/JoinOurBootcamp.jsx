@@ -42,6 +42,19 @@ const whoWeAre = [
   },
 ];
 
+
+const items = [
+  {
+    image: "./img/img.JPG",
+  },
+  {
+    image: "./img/img3.JPG",
+  },
+  {
+    image: "./img/img2.JPG",
+  },
+];
+
 const JoinOurBootcamp = () => {
   return (
     <div className={styles.container}>
@@ -54,8 +67,8 @@ const JoinOurBootcamp = () => {
                 <li key={item.id}>
                   <span className={styles.number}>{item.id}</span>
                   <div className={styles.infosItem}>
-                    {item.title !== ""  && <span className={styles.infosTitle}>{item.title}</span>}
-                    {item.title !== ""  && <br />}
+                    {item.title !== "" && <span className={styles.infosTitle}>{item.title}</span>}
+                    {item.title !== "" && <br />}
                     <span className={styles.infosDesc}>{item.description}</span>
                   </div>
                 </li>
@@ -64,7 +77,15 @@ const JoinOurBootcamp = () => {
           </div>
         </div>
         <div className={styles.rightSide}>
-          <img src="./img/whoweare3.jpg" alt="" />
+          {items.map((item, i) => (
+            <div className={styles.item}>
+              <div className={styles.image}>
+                <img src={item.image} alt="" />
+              </div>
+              <div className={styles.inner}>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
