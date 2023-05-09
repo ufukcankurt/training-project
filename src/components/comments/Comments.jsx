@@ -28,14 +28,8 @@ const allComments = [
     id: 1,
     name: "Stefanie Dalton",
     img: "/img/comment_1.jpg",
-    text: "I’ve been going to Mammoth Fitness in Grovelands Park for a few months now and it’s really a fantastic local class. It’s a challenging class but still accessible and adaptable for all levels. It’s a very nice community seeing the same faces each week. Okan is a great instructor and the exercises change each week so it keeps it fun and varied! I’m happy to have found something like this locally as have to travel into the city for this level of exercise class.",
+    text: "I’ve been going to Great Bear Fitness in Grovelands Park for a few months now and it’s really a fantastic local class. It’s a challenging class but still accessible and adaptable for all levels. It’s a very nice community seeing the same faces each week. Okan is a great instructor and the exercises change each week so it keeps it fun and varied! I’m happy to have found something like this locally as have to travel into the city for this level of exercise class.",
   },
-  // {
-  //   id: 2,
-  //   name: "Cait B",
-  //   img: "/img/comment_2.jpg",
-  //   text: "Neighbourhood Fitness at its Best! I recently moved to the neighbourhood and discovered Mammoth Fitness while out walking my dog. (Great music and positive energy radiating from the church gym!) Okan (the owner) was super welcoming and I got to try my first session for free! It was fantastic and I’ve been a regular for the past 2 months. It is a wonderful supportive group, most of whom live nearby, so it’s been great to meet my neighbours, of all fitness levels! We all work out together in stations and there are options for beginners and advanced. Therefore, you will get the exact workout you require for the stage of fitness you are at in your life. I especially love the outdoor sessions that are on Saturday’s at Grovelands park! Highly recommend this Bootcamp, and specifically Okan!",
-  // },
   {
     id: 3,
     name: "Arden Janicek",

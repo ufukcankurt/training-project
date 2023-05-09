@@ -20,7 +20,7 @@ const trainers = [
     name: "Okan Caylak",
     position: "Personal Trainer",
     description:
-      "With over a decade of individual and group training experience, Okan founded Mammoth Fitness UK and leads much of the instruction. He possesses a Bachelor degree in Sports Science and a level 3 personal training diploma. Having worked as a Physical Education Teacher at St John's RC Special Needs School, Okan has developed an approach to instruction where he is intune with and meets all class participants’ needs. He is incredibly passionate about helping people improve their health, performance and wellbeing.",
+      "With over a decade of individual and group training experience, Okan founded Great Bear Fitness UK and leads much of the instruction. He possesses a Bachelor degree in Sports Science and a level 3 personal training diploma. Having worked as a Physical Education Teacher at St John's RC Special Needs School, Okan has developed an approach to instruction where he is intune with and meets all class participants’ needs. He is incredibly passionate about helping people improve their health, performance and wellbeing.",
     qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
     specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
     image: "./img/okancaylak.png",
@@ -52,18 +52,18 @@ const trainers = [
   //   twitter: "https://twitter.com/",
   //   instagram: "https://www.instagram.com/",
   // },
-  {
-    name: "TONY RIDDLE",
-    position: "Personal Trainer",
-    description:
-      "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
-    qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
-    specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
-    image: "./img/okancaylak.png",
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
-    instagram: "https://www.instagram.com/",
-  },
+  // {
+  //   name: "TONY RIDDLE",
+  //   position: "Personal Trainer",
+  //   description:
+  //     "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
+  //   qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
+  //   specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
+  //   image: "./img/okancaylak.png",
+  //   facebook: "https://www.facebook.com/",
+  //   twitter: "https://twitter.com/",
+  //   instagram: "https://www.instagram.com/",
+  // },
 ];
 
 const OurTrainer = () => {

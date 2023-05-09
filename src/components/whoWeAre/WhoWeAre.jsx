@@ -55,7 +55,7 @@ const WhoWeAre = () => {
       <div className={styles.content}>
         <div className={styles.leftSide}>
           <p>
-            Okan Caylak Fitness professional and Physical education teacher founded Mammoth Fitness UK in 2019 to fuse key aspects of training: circuit training, weight-lifting, HIIT, functional movement, etc.! His vision was to create a community in Palmers Green/Winchmore/Southgate of great people coming together for dynamic, challenging and engaging classes (people who would workout together and grab coffee or drinks afterwards). Encouraged by the rapid growth of Mammoth Fitness UK and the growing demand of its community, Okan has partnered with friends/trainers to expand the community throughout Enfield!
+            Okan Caylak Fitness professional and Physical education teacher founded Great Bear Fitness UK in 2019 to fuse key aspects of training: circuit training, weight-lifting, HIIT, functional movement, etc.! His vision was to create a community in Palmers Green/Winchmore/Southgate of great people coming together for dynamic, challenging and engaging classes (people who would workout together and grab coffee or drinks afterwards). With such strong support and growth in the Palmers Green location, Great Bear Fitness is proud to expand to Enfield Town Park!
           </p>
           <div className={styles.infos}>
             <ul>
