@@ -12,16 +12,17 @@
 	text-transform: uppercase;
 	font-size: 2rem;
 	font-weight: 700;
-	border-left: 5px solid #ea4c23;
+	border-left: 5px solid #C20F2D;
 	padding: 8px 25px;
 }
 
 .colorful {
-	color: #ea4c23;
+	color: #C20F2D;
 }
 
 .normal {
 	margin-left: 7px;
+	color: #012169;
 }
 
 .desc {

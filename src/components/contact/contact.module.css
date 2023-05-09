@@ -1,158 +1,156 @@
 .container {
-  max-width: 1200px;
-  width: 100%;
-  background-color: transparent;
-  margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	background-color: transparent;
+	margin: 0 auto;
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 75px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 75px;
 }
 
 .formSide {
-  width: 50%;
-  padding: 0 20px;
+	width: 50%;
+	padding: 0 20px;
 }
 
 .form {
 }
 
 .title {
-  font-size: 1.9rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-  text-transform: capitalize;
+	font-size: 1.9rem;
+	font-weight: 700;
+	margin-bottom: 25px;
+	text-transform: capitalize;
 }
 
 .inputContainer {
-  margin-bottom: 25px;
-  position: relative;
+	margin-bottom: 25px;
+	position: relative;
 }
 
 .icon {
-  color: #000;
-  font-size: 1.2rem;
-  background: #ffffff;
-  position: absolute;
-  top: 6px;
-  left: 18px;
+	color: #000;
+	font-size: 1.2rem;
+	background: #ffffff;
+	position: absolute;
+	top: 6px;
+	left: 18px;
 }
 
 .input,
 .textarea {
-  width: 100%;
-  height: 50px;
-  padding: 0 30px 0 50px;
-  border: 1px solid rgba(198, 198, 198, 0.6);
-  border-radius: 10px;
-  font-weight: 500;
-  font-size: .9rem;
-  transition: 0.3s ease-in-out;
-  font-family: "Roboto Slab", serif;
+	width: 100%;
+	height: 50px;
+	padding: 0 30px 0 50px;
+	border: 1px solid rgba(198, 198, 198, 0.6);
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 0.9rem;
+	transition: 0.3s ease-in-out;
+	font-family: 'Roboto Slab', serif;
 }
 
 .textarea {
-  height: 250px;
-  min-height: 50px;
-  max-height: 300px;
-  resize: vertical;
-  padding-top: 15px;
+	height: 250px;
+	min-height: 50px;
+	max-height: 300px;
+	resize: vertical;
+	padding-top: 15px;
 }
 
-input[type="text"]:focus,
+input[type='text']:focus,
 .textarea:focus {
-  border-color: #ea4c23;
+	border-color: #c20f2d;
 }
 
 .button {
-  cursor: pointer;
-  width: 150px;
-  padding: 15px 20px;
-  margin: 10px 0 0 0;
-  font-size: .9rem;
-  color: #fff;
-  background-color: #ea4c23;
-  text-align: center;
-  border: #ea4c23;
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
+	cursor: pointer;
+	width: 150px;
+	padding: 15px 20px;
+	margin: 10px 0 0 0;
+	font-size: 0.9rem;
+	color: #fff;
+	background-color: #c20f2d;
+	text-align: center;
+	border: #c20f2d;
+	border-radius: 10px;
+	transition: 0.3s ease-in-out;
+	text-decoration: none;
 }
 
 .button:hover {
-  color: #fff;
-  background-color: rgba(234, 76, 35, 0.8);
-  border-color: #cf3f1f;
+	color: #fff;
+	background-color: rgba(194, 15, 45, 0.9);
+	border-color: #cf3f1f;
 }
 
 .infoSide {
-  width: 50%;
-  padding: 0 20px;
-  padding-left: 50px;
+	width: 50%;
+	padding: 0 20px;
+	padding-left: 50px;
 }
 
-.infos{
-    display: flex;
-    flex-direction: column;
+.infos {
+	display: flex;
+	flex-direction: column;
 }
 
-.info{
-    font-size: .9rem;
-    color: #6c757d;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    text-decoration: none;
-    font-family: "Roboto Slab", serif;
+.info {
+	font-size: 0.9rem;
+	color: #6c757d;
+	line-height: 1.8;
+	margin-bottom: 10px;
+	text-decoration: none;
+	font-family: 'Roboto Slab', serif;
 }
 
-.mainInfo{
-  font-size: .9rem;
-    margin-top: 25px;
-    padding-right: 200px;
+.mainInfo {
+	font-size: 0.9rem;
+	margin-top: 25px;
+	padding-right: 200px;
 }
-
 
 @media (max-width: 1200px) {
-  .container{
+	.container {
 		padding: 0 10px;
 	}
 
-  .infoSide {
-    padding: 0 10px;
-  }
+	.infoSide {
+		padding: 0 10px;
+	}
 
-  .mainInfo{
-    padding-right: 20px;
-}
+	.mainInfo {
+		padding-right: 20px;
+	}
 }
 
 @media (max-width: 991.98px) {
-
 }
 
 @media (max-width: 767.98px) {
-  .content{
-    margin-top: 20px;
-  }
+	.content {
+		margin-top: 20px;
+	}
 
-  .title{
-    margin-bottom: 20px;
-  }
+	.title {
+		margin-bottom: 20px;
+	}
 
-  .inputContainer{
-    margin-bottom: 20px;
-  }
+	.inputContainer {
+		margin-bottom: 20px;
+	}
 
-  .formSide {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0;
-  }
+	.formSide {
+		width: 95%;
+		margin: 0 auto;
+		padding: 0;
+	}
 
-  .infoSide {
-    display: none;
-  }
+	.infoSide {
+		display: none;
+	}
 }
