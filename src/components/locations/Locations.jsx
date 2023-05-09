@@ -28,7 +28,7 @@ const LOCATIONS = [
   {
     title: "Outdoor sessions",
     location: "Enfield Town Park",
-    src: "https://www.google.com/maps/embed/v1/place?q=51.6485547,-0.0861552&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+    src: "https://www.google.com/maps/embed/v1/place?q=Great+Bear+Fitness+UK+(+Formerly+Mammoth+Fitness+UK+),+Cecil+Road,+Enfield,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
     date: "Sunday 09:30-10:30",
   },
 ]
