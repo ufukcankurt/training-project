@@ -4,21 +4,13 @@ import styles from './menuMobil.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
-  faTwitter,
   faInstagram,
+  faWhatsapp,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 
-const socials = [
-  {
-    name: "facebook",
-    link: "https://www.facebook.com/",
-    icon: faFacebookSquare,
-  },
-]
-
 const MenuMobil = ({ setIsActive, isActive }) => {
-
   const closeMenu = () => {
     if (isActive) {
       setIsActive(false)
@@ -112,14 +104,17 @@ const MenuMobil = ({ setIsActive, isActive }) => {
       <div className={styles.right}>
         {/* <p>Follow Us</p> */}
         <div className={styles.socials}>
-          <a className={styles.facebook} href={socials}>
+          <a className={styles.facebook} href="https://www.facebook.com/greatbearfitnessuk" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
-          <a className={styles.twitter} href={socials}>
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a className={styles.instagram} href={socials}>
+          <a className={styles.instagram} href="https://instagram.com/greatbearfitnessuk/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a className={styles.youtube} href="https://www.youtube.com/@GreatBearFitnessUK" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a className={styles.whatsapp} href="https://wa.me/message/LLYCPWMPWGFFN1" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </div>
       </div>

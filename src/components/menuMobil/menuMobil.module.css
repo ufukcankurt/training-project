@@ -10,7 +10,7 @@
 	z-index: 2000;
 	top: 0;
 	left: 0;
-	background-color: #C20F2D;
+	background-color: #c20f2d;
 	overflow: scroll;
 	padding: 100px 0;
 }
@@ -60,7 +60,7 @@
 
 .socials a {
 	cursor: pointer;
-	color: #000;
+	color: #fff;
 	font-size: 1.1rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	display: inline-block;
@@ -75,7 +75,7 @@
 	transition: all 0.2s ease-out 0s;
 }
 
-.facebook{
+.facebook {
 	background: #3b5998;
 	color: #fff;
 	border: 1px solid #3b5998;
@@ -87,8 +87,20 @@
 	border: 1px solid #1da1f2;
 }
 
-.instagram{
+.instagram {
 	background: #e4405f;
 	color: #fff;
 	border: 1px solid #e4405f;
+}
+
+.youtube {
+	background: #ff0000;
+	color: #fff;
+	border: 1px solid #ff0000;
+}
+
+.whatsapp {
+	background: #25d366;
+	color: #fff;
+	border: 1px solid #25d366;
 }
