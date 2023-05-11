@@ -15,6 +15,7 @@ import HeaderFrame from "../../components/headerFrame/HeaderFrame";
 import JoinOurBootcamp from './../../components/joinOurBootcamp/JoinOurBootcamp';
 import Comments from "../../components/comments/Comments";
 import Locations from "../../components/locations/Locations";
+import Whatsapp from "../../components/whatsapp/Whatsapp";
 
 const Homepage = () => {
   const [sticky, setSticky] = useState(false);
@@ -32,6 +33,7 @@ const Homepage = () => {
   return (
     <div className={`${styles.container}`}>
       {sticky && <GoToTop />}
+      <Whatsapp/>
       <section id="home">
         <HomeNav />
       </section>
