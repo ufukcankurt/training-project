@@ -6,7 +6,7 @@ const pageInfos = {
   firstTitle: "WHO",
   secondTitle: "WE ARE",
   description:
-    `A fitness family that challenges and helps each other--the best part is we have great fun doing it!`,
+    `A fitness family that challenges and helps each other. The best part is we have great fun doing it!`,
 };
 
 const whoWeAre = [
