@@ -21,7 +21,7 @@ const Homepage = () => {
   const [sticky, setSticky] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 30) {
+    if (window.scrollY >= 75) {
       setSticky(true);
     } else {
       setSticky(false);
@@ -33,7 +33,8 @@ const Homepage = () => {
   return (
     <div className={`${styles.container}`}>
       {sticky && <GoToTop />}
-      <Whatsapp/>
+      {sticky && <Whatsapp />}
+
       <section id="home">
         <HomeNav />
       </section>
