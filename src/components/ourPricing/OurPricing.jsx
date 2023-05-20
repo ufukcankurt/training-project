@@ -12,19 +12,19 @@ const pageInfos = {
 const prices = [
   {
     title: "10 SESSIONS PACKAGE",
-    price: "£ 80",
-    month: "90 days",
+    price: "£ 90",
+    month: "100 days",
     body: [],
   },
   {
     title: "5 SESSIONS PACKAGE",
-    price: "£ 45",
-    month: "45 days",
+    price: "£ 50",
+    month: "50 days",
     body: [],
   },
   {
     title: "PAY AS YOU GO",
-    price: "£ 12",
+    price: "£ 14",
     month: "---",
     body: [],
   },
