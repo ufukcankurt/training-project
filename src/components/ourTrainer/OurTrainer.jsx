@@ -12,7 +12,7 @@ const pageInfos = {
   firstTitle: "MEET ",
   secondTitle: "THE TEAM",
   description:
-    "We’re not like other gyms. We won’t tie you into a contract. Or charge you a fortune every month. So make yourself at home and take a look around.",
+    "",
 };
 
 const trainers = [
