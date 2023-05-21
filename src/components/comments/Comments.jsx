@@ -51,14 +51,34 @@ const allComments = [
 ]
 
 const Comments = () => {
+  const windowWidth = window.innerWidth;
   return (
     <div className={styles.container}>
-       <SectionTitle pageInfos={pageInfos} />
-      <Swiper pagination={false} modules={[Pagination, Navigation]} navigation={true} className="mySwiper">
-        {
-          allComments.map((comment) => <SwiperSlide><Comment comment={comment} /></SwiperSlide>)
-        }
-      </Swiper>
+      <SectionTitle pageInfos={pageInfos} />
+      {windowWidth < 992 ?
+        <Swiper pagination={false} modules={[Pagination, Navigation]} navigation={true} className="mySwiper">
+          {
+            allComments.map((comment) => <SwiperSlide><Comment comment={comment} /></SwiperSlide>)
+          }
+        </Swiper>
+        : null}
+      {
+        windowWidth > 992 ?
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {
+              allComments.map((comment) => <SwiperSlide><Comment comment={comment} /></SwiperSlide>)
+            }
+          </Swiper>
+          : null
+      }
     </div>
   );
 }
