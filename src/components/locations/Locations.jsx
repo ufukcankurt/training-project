@@ -16,7 +16,7 @@ const LOCATIONS = [
   {
     title: "Outdoor Sessions",
     location: "Grovelands Park",
-    src: "https://maps.google.com/maps?q=Grovelands%20Park&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    src: "https://www.google.com/maps/embed/v1/place?q=Great+Bear+Fitness+UK+(+Formerly+Mammoth+Fitness+UK),+Grovelands+Park,+London,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
     date: "Saturday 09:30 - 10:30",
   },
   {
