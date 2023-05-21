@@ -37,7 +37,7 @@ const HomeNav = () => {
             activeClass={styles.active}
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-78}
             duration={500}
           >
             <img src="./img/logo5.png" alt="" />
@@ -51,7 +51,7 @@ const HomeNav = () => {
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-78}
                 duration={500}
               >
                 <span className={styles.link}>Home</span>
@@ -63,7 +63,7 @@ const HomeNav = () => {
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-78}
                 duration={500}
               >
                 <span className={styles.link}>About</span>
@@ -75,7 +75,7 @@ const HomeNav = () => {
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-78}
                 duration={500}
               >
                 <span className={styles.link}>Testimonials</span>
@@ -87,7 +87,7 @@ const HomeNav = () => {
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-78}
                 duration={500}
               >
                 <span className={styles.link}>Team</span>
@@ -99,7 +99,7 @@ const HomeNav = () => {
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-78}
                 duration={500}
               >
                 <span className={styles.link}>Locations</span>
@@ -111,7 +111,7 @@ const HomeNav = () => {
                 activeClass={styles.active}
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-78}
                 duration={500}
               >
                 <span className={styles.link}>Contact</span>
