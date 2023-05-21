@@ -11,12 +11,12 @@ const Footer = () => {
           <p className={styles.text}>Monday & Friday : 8'am - 11'pm</p>
           <p className={styles.text}>​​Saturday & Sunday : 10'am - 8'pm</p>
           <p className={styles.title}>Adress</p>
-          <p className={styles.text}>NEW YORK, NY 10024-7603, USA</p>
+          <p className={styles.text}>Grovelands Park, UK</p>
         </div>
         <div className={styles.item}>
           <p className={styles.title}>Contact</p>
-          <p className={styles.text}>info@example.com</p>
-          <p className={styles.text}>0752458457</p>
+          <p className={styles.text}>info@greatbearfitness.co.uk</p>
+          <p className={styles.text}>07883692262</p>
           <p className={styles.title}>Socials</p>
           <div>
           <Socials />

@@ -85,10 +85,9 @@ const Contact = () => {
         <div className={styles.infoSide}>
           <p className={styles.title}>Contact Information</p>
           <div className={styles.infos}>
-            <p className={styles.info}>NEW YORK, NY 10024-7603, USA</p>
-            <a href="w." className={styles.info}>0752458457</a>
-            <a href="w." className={styles.info}>info@example.com</a>
-            <a href="w." className={styles.info}>www.example.com</a>
+            <p className={styles.info}>Grovelands Park, UK</p>
+            <a href="tel:+07883692262" className={styles.info}>07883692262</a>
+            <a href="mailto:info@greatbearfitness.co.uk" className={styles.info}>info@greatbearfitness.co.uk</a>
 
             <p className={`${styles.mainInfo} ${styles.info}`}>We’re not like other gyms. We won’t tie you into a contract. Or charge you a fortune every month. So make yourself at home and take a look around.</p>
           </div>
