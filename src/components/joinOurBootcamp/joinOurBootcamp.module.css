@@ -55,7 +55,7 @@
 
 .number {
 	font-size: 2rem;
-	color: #C20F2D;
+	color: #c20f2d;
 	vertical-align: text-top;
 	line-height: 1;
 	position: relative;
@@ -82,6 +82,28 @@
 	color: #000;
 }
 
+.item {
+	width: 98%;
+	height: 189px;
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.image {
+	overflow: hidden;
+}
+
+.image img {
+	max-width: 100%;
+	width: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+	height: auto;
+	border-radius: 5px;
+}
+
 @media (max-width: 1200px) {
 	.container {
 		padding: 0 10px;
@@ -89,35 +111,34 @@
 }
 
 @media (max-width: 991.98px) {
-  .leftSide {
-    width: 58%;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
+	.leftSide {
+		width: 58%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 }
 
 @media (max-width: 767.98px) {
-  .content {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-  }
+	.content {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin-top: 25px;
+	}
 
-  .infos {
-    padding-left: 0;
+	.infos {
+		padding-left: 0;
+	}
+
+	.leftSide {
+		width: 95%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.rightSide {
+		width: 85%;
+		padding-left: 10px;
+		padding-bottom: 20px;
+	}
 }
-
-  .leftSide {
-    width: 95%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .rightSide {
-    width: 85%;
-    padding-left: 10px;
-    padding-bottom: 20px;
-  }
-}
-

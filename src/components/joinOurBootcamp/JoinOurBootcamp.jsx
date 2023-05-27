@@ -45,10 +45,13 @@ const whoWeAre = [
 
 const items = [
   {
-    image: "./img/img3.JPG",
+    image: "./img/joinour1.jpg",
   },
   {
-    image: "./img/img.JPG",
+    image: "./img/joinour2.jpg",
+  },
+  {
+    image: "./img/joinour3.jpg",
   },
 ];
 
