@@ -11,6 +11,7 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 .content img {
@@ -26,13 +27,14 @@
 .image {
 	overflow: hidden;
 	position: relative;
+	height: 100%;
 }
 
 .image img {
 	max-width: 100%;
-	/* object-fit: cover; */
+	object-fit: cover;
 	vertical-align: middle;
-	height: auto;
+	height: 100%;
 }
 
 .inner {
@@ -135,9 +137,9 @@
 }
 
 @media (max-width: 991.98px) {
-  .item {
-    width: 48%;
-  }
+	.item {
+		width: 48%;
+	}
 }
 
 @media (max-width: 767.98px) {
@@ -145,8 +147,7 @@
 		margin-top: 25px;
 	}
 
-  .item {
-    width: 48%;
-  }
+	.item {
+		width: 48%;
+	}
 }
-
