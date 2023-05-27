@@ -33,7 +33,7 @@ const items = [
     price: "Free",
   },
   {
-    image: "./img/join-4.jpg",
+    image: "./img/first5.jpg",
     title: "BOXING WORKOUT",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
@@ -47,7 +47,7 @@ const items = [
     price: "$30",
   },
   {
-    image: "./img/join-23.jpg",
+    image: "./img/first6.jpg",
     title: "YOGA FITNESS",
     description:
       "Curabitur fermentum odio ac enim interdum consequat. Sed vel faucibus leo. Ut turpis ipsum, fringilla eget tortor ...",
