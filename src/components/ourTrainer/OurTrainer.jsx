@@ -32,9 +32,9 @@ const trainers = [
     name: "TONY RIDDLE",
     position: "Personal Trainer",
     description:
-      "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples.",
+      "I’m a Certified Personal Trainer and a Physical Education instructor in a Special Needs School in Essex. I am a coach of 10+ years, run the strength and conditioning programs for several football teams, and instruct bootcamp classes for larger groups. I strongly believe in training your mind, body, and soul, as mental and physical wellness play an equal and vital role in your attitude towards life. My objective is to help clients build a comprehensive and holistic program that encompasses core strengthening, cardiovascular fitness, endurance, resistance, agility, and speed training. Ultimately, I want my clients to feel amazing and strong after every workout. I commit to a consistent and collaborative relationship geared towards my clients’ wellness goals.",
     qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
-    specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
+    specialization: ["Weight training", "Speed, agility, quickness", "Muscle building", "Fat loss", "Football training"],
     image: "./img/tony.png",
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
@@ -71,7 +71,7 @@ const OurTrainer = () => {
                   <p className={styles.position}>{trainer.position}</p>
                 </div>
                 <div className={styles.trainerDesc}>{trainer.description}</div>
-                <div className={styles.trainerSocials}>
+                {/* <div className={styles.trainerSocials}>
                   <a className={styles.facebook} href={trainer.facebook}>
                     <FontAwesomeIcon icon={faFacebookSquare} />
                   </a>
@@ -81,7 +81,7 @@ const OurTrainer = () => {
                   <a className={styles.instagram} href={trainer.instagram}>
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className={styles.trainerSpecific}>
