@@ -19,15 +19,13 @@ const Footer = () => {
           <p className={styles.text}>07883692262</p>
           <p className={styles.title}>Socials</p>
           <div>
-          <Socials />
+            <Socials />
           </div>
         </div>
         <div className={`${styles.item} ${styles.aboutus}`}>
           <p className={styles.title}>About Us</p>
           <p className={`${styles.text} ${styles.about}`}>
-            We’re not like other gyms. We won’t tie you into a contract. Or
-            charge you a fortune every month. So make yourself at home and take
-            a look around.
+            A fitness family that challenges and helps each other. The best part is we have great fun doing it!
           </p>
         </div>
       </div>
