@@ -28,42 +28,30 @@ const trainers = [
     twitter: "https://twitter.com/",
     instagram: "https://www.instagram.com/",
   },
-  // {
-  //   name: "Gabriella Morales",
-  //   position: "Personal Trainer",
-  //   description:
-  //     "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
-  //   qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
-  //   specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
-  //   image: "./img/trainer-2.png",
-  //   facebook: "https://www.facebook.com/",
-  //   twitter: "https://twitter.com/",
-  //   instagram: "https://www.instagram.com/",
-  // },
-  // {
-  //   name: "Tommy Romero",
-  //   position: "Personal Trainer",
-  //   description:
-  //     "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
-  //   qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
-  //   specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
-  //   image: "./img/trainer-3.png",
-  //   facebook: "https://www.facebook.com/",
-  //   twitter: "https://twitter.com/",
-  //   instagram: "https://www.instagram.com/",
-  // },
-  // {
-  //   name: "TONY RIDDLE",
-  //   position: "Personal Trainer",
-  //   description:
-  //     "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples. The course ...",
-  //   qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
-  //   specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
-  //   image: "./img/okancaylak.png",
-  //   facebook: "https://www.facebook.com/",
-  //   twitter: "https://twitter.com/",
-  //   instagram: "https://www.instagram.com/",
-  // },
+  {
+    name: "TONY RIDDLE",
+    position: "Personal Trainer",
+    description:
+      "The training sufficiently covered cloud fundamentals. Good outline with crisp real life examples.",
+    qualifications: ["Bachelor degree in Sports Science", "REP level 3 Personal Trainer", "Level 2 GYM instructor", "Award in Circuit Instruction", "Award in teaching Personal Training Outdoors", "Award in Indoor Cycling", "Award in GP & Exercises Referral", "Level 2 Mental health awarenesses"],
+    specialization: ["Weight training", "Outdoor Training", "Weight loss", "Client motivation", "Postural training", "Muscle building", "Sport specific training"],
+    image: "./img/okancaylak.png",
+    facebook: "https://www.facebook.com/",
+    twitter: "https://twitter.com/",
+    instagram: "https://www.instagram.com/",
+  },
+  {
+    name: "ANDREA",
+    position: "Personal Trainer",
+    description:
+      "I am Andrea, an experienced and versatile sportsman passionate about helping individuals of all ages and backgrounds achieve their fitness goals. With a sports fitness and coaching degree, I have applied my skills as a swimming coach, personal trainer, boxing coach and weightlifting coach. My experience spans from children to adults, amateurs to competitive athletes, and all those in-between! Alongside my coaching and training services, I am here to provide ongoing support and motivation: a positive and empowering environment drives long-term success. Together, we can build a strong foundation of fitness and overall well-being!",
+    qualifications: ["Degree in Sport Fitness and coaching", "Swimming instructor qualification ", "Swimming coach qualification ", "Football coach qualification"],
+    specialization: ["Weight training", "Boxing", "Swimming", "Muscle building", "Weight loss", "Power lifting"],
+    image: "./img/okancaylak.png",
+    facebook: "https://www.facebook.com/",
+    twitter: "https://twitter.com/",
+    instagram: "https://www.instagram.com/",
+  },
 ];
 
 const OurTrainer = () => {
