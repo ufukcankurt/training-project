@@ -38,13 +38,13 @@ const whoWeAre = [
 
 const items = [
   {
-    image: "./img/join-2.jpg",
+    image: "./img/whoweare1.png",
   },
   {
-    image: "./img/join-3.jpg",
+    image: "./img/whoweare2.jpg",
   },
   {
-    image: "./img/join-1.jpg",
+    image: "./img/whoweare4.jpg",
   },
 ];
 
@@ -55,7 +55,7 @@ const WhoWeAre = () => {
       <div className={styles.content}>
         <div className={styles.leftSide}>
           <p>
-            Okan Caylak Fitness professional and Physical education teacher founded Great Bear Fitness UK in 2019 to fuse key aspects of training: circuit training, weight-lifting, HIIT, functional movement, etc.! His vision was to create a community in Palmers Green/Winchmore/Southgate of great people coming together for dynamic, challenging and engaging classes (people who would workout together and grab coffee or drinks afterwards). With such strong support and growth in the Palmers Green location, Great Bear Fitness is proud to expand to Enfield Town Park!
+            Okan Caylak Fitness professional and Physical education teacher founded Great Bear Fitness UK in 2019 to fuse key aspects of training: circuit training, weight-lifting, HIIT, functional movement, etc.! His vision was to create a community in Palmers Green/Winchmore/Southgate of great people coming together for dynamic, challenging and engaging classes (people who would workout together and grab coffee or drinks afterwards). With such strong support and growth in the Winchmore Hill and Palmers Green locations, Great Bear Fitness is proud to expand to Enfield Town Park!
           </p>
           <div className={styles.infos}>
             <ul>
