@@ -11,12 +11,12 @@ import {
 const Socials = () => {
   return (
     <div className={styles.container}>
-      <a href="https://www.facebook.com/greatbearfitnessuk" target="_blank" rel="noreferrer">
+      <a href="https://www.facebook.com/greatbearfitness" target="_blank" rel="noreferrer">
         <div className={`${styles.item} ${styles.facebook}`}>
           <FontAwesomeIcon icon={faFacebookSquare} className={styles.icon} />
         </div>
       </a>
-      <a href="https://instagram.com/greatbearfitnessuk/" target="_blank" rel="noreferrer">
+      <a href="https://instagram.com/greatbearfitness" target="_blank" rel="noreferrer">
         <div className={`${styles.item} ${styles.instagram}`}>
           <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
         </div>
