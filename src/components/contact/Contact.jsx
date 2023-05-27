@@ -1,5 +1,5 @@
 import styles from "./contact.module.css";
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "../../common/sectionTitle/SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,15 +9,52 @@ import {
   faPhoneSquare,
   faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faYoutube,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import axios from "axios";
+
 
 const pageInfos = {
   firstTitle: "CONTACT",
   secondTitle: "US",
   description:
-    "We’re not like other gyms. We won’t tie you into a contract. Or charge you a fortune every month. So make yourself at home and take a look around.",
+    "Secure your complimentary trial session and start enhancing your skills! To book your free trial session right away, simply fill out the form below, and we will get back to you as soon as possible!",
 };
 
 const Contact = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [adress, setAdress] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = {
+      "fullname": name,
+      "email": email,
+      "adress": adress,
+      "phone": phone,
+      "subject": subject,
+      "message": message,
+    };
+
+    axios.post("http://13.48.43.164:8080/mail", data, {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    });
+
+    console.log(data);
+  };
+
   return (
     <div className={styles.container}>
       <SectionTitle pageInfos={pageInfos} />
@@ -30,6 +67,7 @@ const Contact = () => {
                 className={styles.input}
                 type="text"
                 placeholder="Fullname"
+                onChange={(e) => setName(e.target.value)}
               />
               <span className={styles.icon}>
                 <FontAwesomeIcon icon={faUser} />
@@ -40,6 +78,7 @@ const Contact = () => {
                 className={styles.input}
                 type="text"
                 placeholder="E-mail"
+                onChange={(e) => setEmail(e.target.value)}
               />
               <span className={styles.icon}>
                 <FontAwesomeIcon icon={faEnvelope} />
@@ -50,13 +89,16 @@ const Contact = () => {
                 className={styles.input}
                 type="text"
                 placeholder="Adress"
+                onChange={(e) => setAdress(e.target.value)}
               />
               <span className={styles.icon}>
                 <FontAwesomeIcon icon={faAddressBook} />
               </span>
             </div>
             <div className={styles.inputContainer}>
-              <input className={styles.input} type="text" placeholder="Phone" />
+              <input className={styles.input} type="number" placeholder="Phone"
+                onChange={(e) => setPhone(e.target.value)}
+              />
               <span className={styles.icon}>
                 <FontAwesomeIcon icon={faPhoneSquare} />
               </span>
@@ -66,6 +108,7 @@ const Contact = () => {
                 className={styles.input}
                 type="text"
                 placeholder="Subject"
+                onChange={(e) => setSubject(e.target.value)}
               />
               <span className={styles.icon}>
                 <FontAwesomeIcon icon={faIdCard} />
@@ -77,15 +120,26 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
           </form>
-          <button className={styles.button}>Send Message</button>
+          <button onClick={handleSubmit} className={styles.button}>Send Message</button>
         </div>
         <div className={styles.infoSide}>
           <p className={styles.title}>Contact Information</p>
           <div className={styles.infos}>
-            <p className={styles.info}>Grovelands Park, UK</p>
+            <div className={styles.trainerSocials}>
+              <a className={styles.facebook} href="https://www.facebook.com/greatbearfitness" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faFacebookSquare} />
+              </a>
+              <a className={styles.instagram} href="https://instagram.com/greatbearfitness" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a className={styles.youtube} href="https://www.youtube.com/@GreatBearFitnessUK" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+            </div>
             <a href="tel:+07883692262" className={styles.info}>07883692262</a>
             <a href="mailto:info@greatbearfitness.co.uk" className={styles.info}>info@greatbearfitness.co.uk</a>
 
