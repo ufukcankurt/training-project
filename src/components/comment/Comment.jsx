@@ -13,7 +13,7 @@ const Comment = ({comment}) => {
         </p>
       </div>
       <div className={styles.svg}>
-        <img src="/img/quotation-marks.svg" alt="" />
+        <img src="/img/quote2.svg" alt="" />
       </div>
       <div className={styles.username}>
         {comment?.name}
