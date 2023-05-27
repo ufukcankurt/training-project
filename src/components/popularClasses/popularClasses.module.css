@@ -23,6 +23,7 @@
 	min-height: 231px;
 	position: relative;
 	margin-bottom: 30px;
+	border-radius: 5px;
 }
 
 .image {
@@ -36,6 +37,7 @@
 	object-fit: cover;
 	vertical-align: middle;
 	height: 100%;
+	border-radius: 5px;
 }
 
 .inner {
