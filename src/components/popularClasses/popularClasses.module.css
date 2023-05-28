@@ -154,3 +154,9 @@
 		width: 48%;
 	}
 }
+
+@media (max-width: 600.98px) {
+	.item {
+		width: 100%;
+	}
+}

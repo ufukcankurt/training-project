@@ -84,7 +84,7 @@
 
 .item {
 	width: 98%;
-	height: 189px;
+	height: auto;
 	position: relative;
 	margin-bottom: 30px;
 	overflow: hidden;
@@ -116,6 +116,10 @@
 		padding-left: 2%;
 		padding-right: 2%;
 	}
+
+	.rightSide {
+		width: 48%;
+	}
 }
 
 @media (max-width: 767.98px) {
@@ -137,7 +141,7 @@
 	}
 
 	.rightSide {
-		width: 85%;
+		width: 100%;
 		padding-left: 10px;
 		padding-bottom: 20px;
 	}
