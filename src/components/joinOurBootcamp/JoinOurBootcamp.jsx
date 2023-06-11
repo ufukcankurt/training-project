@@ -50,9 +50,9 @@ const items = [
   {
     image: "./img/joinour2.jpg",
   },
-  {
-    image: "./img/joinour3.jpg",
-  },
+  // {
+  //   image: "./img/joinour3.jpg",
+  // },
 ];
 
 const JoinOurBootcamp = () => {
