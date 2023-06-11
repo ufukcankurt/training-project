@@ -34,7 +34,7 @@ const trainers = [
     description:
       "I’m a Certified Personal Trainer and a Physical Education instructor in a Special Needs School in Essex. I am a coach of 10+ years, run the strength and conditioning programs for several football teams, and instruct bootcamp classes for larger groups. I strongly believe in training your mind, body, and soul, as mental and physical wellness play an equal and vital role in your attitude towards life. My objective is to help clients build a comprehensive and holistic program that encompasses core strengthening, cardiovascular fitness, endurance, resistance, agility, and speed training. Ultimately, I want my clients to feel amazing and strong after every workout. I commit to a consistent and collaborative relationship geared towards my clients’ wellness goals.",
     qualifications: ["Level 2 fitness instructor", "Training for speed and power in sports", "Uefa B football coach", "Level one football scout", "First aid certificate", "SAQ certificate"],
-    specialization: ["Weight training", "Speed, agility, quickness", "Muscle building", "Fat loss", "Football training"],
+    specialization: ["Weight training", "Speed, agility, quickness", "Muscle building", "Fat loss", "Football training"],
     image: "./img/tony.png",
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
@@ -45,8 +45,8 @@ const trainers = [
     position: "Personal Trainer",
     description:
       "I am Andrea, an experienced and versatile sportsman passionate about helping individuals of all ages and backgrounds achieve their fitness goals. With a sports fitness and coaching degree, I have applied my skills as a swimming coach, personal trainer, boxing coach and weightlifting coach. My experience spans from children to adults, amateurs to competitive athletes, and all those in-between! Alongside my coaching and training services, I am here to provide ongoing support and motivation: a positive and empowering environment drives long-term success. Together, we can build a strong foundation of fitness and overall well-being!",
-    qualifications: ["Degree in Sport Fitness and coaching", "Swimming instructor qualification ", "Swimming coach qualification ", "Football coach qualification"],
-    specialization: ["Weight training", "Boxing", "Swimming", "Muscle building", "Weight loss", "Power lifting"],
+    qualifications: ["Level 3 personal trainer", "Strength and conditioning certificate", "Degree in Sport Fitness and coaching", "Swimming instructor qualification ", "Swimming coach qualification ", "Football coach qualification"],
+    specialization: ["Weight training", "Boxing", "Swimming", "Muscle building", "Weight loss", "Power lifting"],
     image: "./img/andrea.png",
     facebook: "https://www.facebook.com/",
     twitter: "https://twitter.com/",
