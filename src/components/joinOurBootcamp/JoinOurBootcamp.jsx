@@ -6,7 +6,7 @@ const pageInfos = {
   firstTitle: "Why",
   secondTitle: "Group Classes",
   description:
-    `Fitness is best served with friends! Workout with and get to know your neighbours as building a local workout community is our ethos: coffee after class, picnics in the park, pub outings, Holiday Parties! We find satisfaction in knowing each other!`,
+    `Fitness is best served with friends! Workout with and get to know your neighbours as building a local workout community is our ethos: coffee after class, picnics in the park, pub outings, Holiday Parties!`,
 };
 
 const whoWeAre = [
