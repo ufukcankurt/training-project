@@ -1,12 +1,6 @@
 import styles from "./ourTrainer.module.css";
 import React from "react";
 import SectionTitle from "../../common/sectionTitle/SectionTitle";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookSquare,
-  faTwitter,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 
 const pageInfos = {
   firstTitle: "MEET ",
