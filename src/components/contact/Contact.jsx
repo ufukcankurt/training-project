@@ -15,6 +15,8 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
+import Alert from "../alert/Alert";
+
 
 
 const pageInfos = {
@@ -32,9 +34,11 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [show, setShow] = useState(false);
+  const [status, setStatus] = useState("");
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const data = {
@@ -46,18 +50,38 @@ const Contact = () => {
       "message": message,
     };
 
-    axios.post("http://13.48.43.164:8080/mail", data, {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    });
+    try {
+      const res = await axios.post("https://mailsender-amp5.onrender.com/mail", data);
 
-    console.log(data);
+      if (res.status === 200) {
+        setShow(true);
+
+        setName("");
+        setEmail("");
+        setAdress("");
+        setPhone("");
+        setSubject("");
+        setMessage("");
+
+        setTimeout(() => {
+          setShow(false);
+        }, 1000);
+      }
+    } catch (error) {
+      setStatus("fail");
+      setShow(true);
+      setTimeout(() => {
+        setShow(false);
+      }, 1000);
+
+      console.log(error);
+    }
   };
 
   return (
     <div className={styles.container}>
       <SectionTitle pageInfos={pageInfos} />
+      {show ? <Alert status={status} /> : ""}
       <div className={styles.content}>
         <div className={styles.formSide}>
           <p className={styles.title}>Get in touch</p>
@@ -66,6 +90,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                value={name}
                 placeholder="Fullname"
                 onChange={(e) => setName(e.target.value)}
               />
@@ -77,6 +102,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                value={email}
                 placeholder="E-mail"
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -88,6 +114,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                value={adress}
                 placeholder="Adress"
                 onChange={(e) => setAdress(e.target.value)}
               />
@@ -96,7 +123,7 @@ const Contact = () => {
               </span>
             </div>
             <div className={styles.inputContainer}>
-              <input className={styles.input} type="number" placeholder="Phone"
+              <input className={styles.input} type="number" placeholder="Phone" value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
               <span className={styles.icon}>
@@ -107,6 +134,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                value={subject}
                 placeholder="Subject"
                 onChange={(e) => setSubject(e.target.value)}
               />
@@ -119,6 +147,7 @@ const Contact = () => {
                 className={styles.textarea}
                 cols="30"
                 rows="10"
+                value={message}
                 placeholder="Message"
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
