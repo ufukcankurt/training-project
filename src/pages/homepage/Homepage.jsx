@@ -21,7 +21,7 @@ const Homepage = () => {
   const [sticky, setSticky] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 75) {
+    if (window.scrollY >= 180) {
       setSticky(true);
     } else {
       setSticky(false);
