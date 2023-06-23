@@ -3,7 +3,6 @@ import Swal from 'sweetalert2'
 
 
 const Alert = ({ status }) => {
-  console.log("status", status)
   let timerInterval
   Swal.fire({
     title: status === "success" ? 'Message sent successfully!' : 'Message cannot sent!',

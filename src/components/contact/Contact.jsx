@@ -90,6 +90,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                required={true}
                 value={name}
                 placeholder="Fullname"
                 onChange={(e) => setName(e.target.value)}
@@ -102,6 +103,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                required={true}
                 value={email}
                 placeholder="E-mail"
                 onChange={(e) => setEmail(e.target.value)}
@@ -114,6 +116,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                required={true}
                 value={adress}
                 placeholder="Adress"
                 onChange={(e) => setAdress(e.target.value)}
@@ -123,7 +126,12 @@ const Contact = () => {
               </span>
             </div>
             <div className={styles.inputContainer}>
-              <input className={styles.input} type="number" placeholder="Phone" value={phone}
+              <input
+                className={styles.input}
+                type="number"
+                required={true}
+                placeholder="Phone"
+                value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
               <span className={styles.icon}>
@@ -134,6 +142,7 @@ const Contact = () => {
               <input
                 className={styles.input}
                 type="text"
+                required={true}
                 value={subject}
                 placeholder="Subject"
                 onChange={(e) => setSubject(e.target.value)}
@@ -147,6 +156,7 @@ const Contact = () => {
                 className={styles.textarea}
                 cols="30"
                 rows="10"
+                required={true}
                 value={message}
                 placeholder="Message"
                 onChange={(e) => setMessage(e.target.value)}
