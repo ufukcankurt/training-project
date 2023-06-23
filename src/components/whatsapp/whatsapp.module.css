@@ -1,8 +1,7 @@
 .container {
 	position: fixed;
-	bottom: 0;
-	left: 0;
-	margin: 10px;
+	bottom: 130px;
+	right: 50px;
 	z-index: 1000;
 	display: flex;
 	flex-direction: column;
@@ -17,7 +16,6 @@
 	text-align: center;
 	color: #25d366;
 	background-color: rgba(0, 0, 0, 0.1);
-	margin: 5px;
 	border-radius: 50%;
 	transition: 0.3s ease-in-out;
 }
@@ -25,5 +23,19 @@
 @media (max-width: 767.98px) {
 	.container {
 		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		right: 20px;
+		bottom: 90px;
+	}
+
+	.item {
+		width: 50px;
+		height: 50px;
+		line-height: 49px;
+		font-size: 35px;
 	}
 }
