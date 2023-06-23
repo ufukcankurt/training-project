@@ -24,7 +24,7 @@ const prices = [
   },
   {
     title: "PAY AS YOU GO",
-    price: "£ 14",
+    price: "£ 13",
     month: "---",
     body: [],
   },
