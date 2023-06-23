@@ -28,7 +28,7 @@ const allComments = [
     id: 1,
     name: "Stefanie Dalton",
     img: "/img/comment_1.jpg",
-    text: "I’ve been going to Mammoth Fitness in Grovelands Park for a few months now and it’s really a fantastic local class. It’s a challenging class but still accessible and adaptable for all levels. It’s a very nice community seeing the same faces each week. Okan is a great instructor and the exercises change each week so it keeps it fun and varied! I’m happy to have found something like this locally as have to travel into the city for this level of exercise class.",
+    text: "I’ve been going to Great Bear Fitness in Grovelands Park for a few months now and it’s really a fantastic local class. It’s a challenging class but still accessible and adaptable for all levels. It’s a very nice community seeing the same faces each week. Okan is a great instructor and the exercises change each week so it keeps it fun and varied! I’m happy to have found something like this locally as have to travel into the city for this level of exercise class.",
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const allComments = [
     id: 5,
     name: "Mike",
     img: "/img/comment_5.jpg",
-    text: "I have been enjoying Mammoth Fitness classes since Aug 2022. Okan is great, he has excellent communication, he is very attentive and offers different varieties of workout. I like the flexibility of only charging for classes attended which for me is a great value for money. Okan has built a lovely community of people who are friendly and supporting.",
+    text: "I have been enjoying Great Bear Fitness classes since Aug 2022. Okan is great, he has excellent communication, he is very attentive and offers different varieties of workout. I like the flexibility of only charging for classes attended which for me is a great value for money. Okan has built a lovely community of people who are friendly and supporting.",
   },
   {
     id: 6,
