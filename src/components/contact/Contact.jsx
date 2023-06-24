@@ -55,6 +55,7 @@ const Contact = () => {
 
       if (res.status === 200) {
         setShow(true);
+        setStatus("success");
 
         setName("");
         setEmail("");
