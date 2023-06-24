@@ -86,7 +86,7 @@ const Contact = () => {
       <div className={styles.content}>
         <div className={styles.formSide}>
           <p className={styles.title}>Get in touch</p>
-          <form className={styles.form} action="">
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.inputContainer}>
               <input
                 className={styles.input}
@@ -103,7 +103,7 @@ const Contact = () => {
             <div className={styles.inputContainer}>
               <input
                 className={styles.input}
-                type="text"
+                type="email"
                 required={true}
                 value={email}
                 placeholder="E-mail"
@@ -163,8 +163,8 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
+            <button type="submit" className={styles.button}>Send Message</button>
           </form>
-          <button onClick={handleSubmit} className={styles.button}>Send Message</button>
         </div>
         <div className={styles.infoSide}>
           <p className={styles.title}>Contact Information</p>
