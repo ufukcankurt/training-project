@@ -26,13 +26,13 @@ const whoWeAre = [
     id: "03",
     title: "",
     description:
-      "Structured Workouts Curated by Personal Trainers",
+      "Structured workouts curated by personal trainers",
   },
   {
     id: "04",
     title: "",
     description:
-      "Accountability to Each Other",
+      "Accountability to each other",
   },
   {
     id: "05",
