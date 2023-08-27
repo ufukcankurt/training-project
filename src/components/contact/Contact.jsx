@@ -16,8 +16,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
 import Alert from "../alert/Alert";
-
-
+import Loader from "../loader/Loader";
 
 const pageInfos = {
   firstTitle: "CONTACT",
@@ -27,7 +26,6 @@ const pageInfos = {
 };
 
 const Contact = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [adress, setAdress] = useState("");
@@ -36,26 +34,31 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
   const [status, setStatus] = useState("");
-
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     const data = {
-      "fullname": name,
-      "email": email,
-      "adress": adress,
-      "phone": phone,
-      "subject": subject,
-      "message": message,
+      fullname: name,
+      email: email,
+      adress: adress,
+      phone: phone,
+      subject: subject,
+      message: message,
     };
 
     try {
-      const res = await axios.post("https://mailsender-amp5.onrender.com/mail", data);
+      const res = await axios.post(
+        "https://mailsender-amp5.onrender.com/mail",
+        data
+      );
 
       if (res.status === 200) {
         setShow(true);
         setStatus("success");
+        setIsSending(false);
 
         setName("");
         setEmail("");
@@ -71,6 +74,7 @@ const Contact = () => {
     } catch (error) {
       setStatus("fail");
       setShow(true);
+      setIsSending(false);
       setTimeout(() => {
         setShow(false);
       }, 1000);
@@ -163,27 +167,59 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <button type="submit" className={styles.button}>Send Message</button>
+            <button
+              type="submit"
+              className={styles.button}
+              disabled={isSending}
+            >
+              {isSending ? <Loader /> : "Send Message"}
+            </button>
           </form>
         </div>
         <div className={styles.infoSide}>
           <p className={styles.title}>Contact Information</p>
           <div className={styles.infos}>
             <div className={styles.trainerSocials}>
-              <a className={styles.facebook} href="https://www.facebook.com/greatbearfitness" target="_blank" rel="noreferrer">
+              <a
+                className={styles.facebook}
+                href="https://www.facebook.com/greatbearfitness"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faFacebookSquare} />
               </a>
-              <a className={styles.instagram} href="https://instagram.com/greatbearfitness" target="_blank" rel="noreferrer">
+              <a
+                className={styles.instagram}
+                href="https://instagram.com/greatbearfitness"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a className={styles.youtube} href="https://www.youtube.com/@GreatBearFitnessUK" target="_blank" rel="noreferrer">
+              <a
+                className={styles.youtube}
+                href="https://www.youtube.com/@GreatBearFitnessUK"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
             </div>
-            <a href="tel:+07883692262" className={styles.info}>07883692262</a>
-            <a href="mailto:info@greatbearfitness.co.uk" className={styles.info}>info@greatbearfitness.co.uk</a>
+            <a href="tel:+07883692262" className={styles.info}>
+              07883692262
+            </a>
+            <a
+              href="mailto:info@greatbearfitness.co.uk"
+              className={styles.info}
+            >
+              info@greatbearfitness.co.uk
+            </a>
 
-            <p className={`${styles.mainInfo} ${styles.info}`}>We’re not like other gyms. We won’t tie you into a contract. Or charge you a fortune every month. So make yourself at home and take a look around.</p>
+            <p className={`${styles.mainInfo} ${styles.info}`}>
+              We’re not like other gyms. We won’t tie you into a contract. Or
+              charge you a fortune every month. So make yourself at home and
+              take a look around.
+            </p>
           </div>
         </div>
       </div>
