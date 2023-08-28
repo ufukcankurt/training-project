@@ -50,7 +50,7 @@ const allComments = [
   {
     id: 5,
     name: "Mike",
-    img: "/img/comment_5.jpg",
+    img: "/img/comment_mike.jpg",
     text: "I have been enjoying Great Bear Fitness classes since Aug 2022. Okan is great, he has excellent communication, he is very attentive and offers different varieties of workout. I like the flexibility of only charging for classes attended which for me is a great value for money. Okan has built a lovely community of people who are friendly and supporting.",
   },
   {
